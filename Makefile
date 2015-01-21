@@ -153,8 +153,10 @@ override_property += \
 # The default value is nothing.
 # You can add the property name in the value from the build.prop.
 #-----------------------------------------------------------------------------
-# remove_property += \
-#     dev.defaultwallpaper
+remove_property += \
+        ro.operator.optr \
+        ro.operator.spec \
+        ro.operator.seg
 
 
 ##############################################################################
