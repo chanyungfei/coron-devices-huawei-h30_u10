@@ -308,48 +308,43 @@
 
     iput v3, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mSimSlotId:I
 
-    .line 202
-    const-string v3, "operator"
+    #const-string v3, "operator"
 
-    invoke-interface {p0, v3}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
+    #invoke-interface {p0, v3}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
-    move-result v3
+    #move-result v3
 
-    invoke-interface {p0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    #invoke-interface {p0, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    #move-result-object v3
 
-    iput-object v3, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mOperator:Ljava/lang/String;
+    #iput-object v3, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mOperator:Ljava/lang/String;
 
-    .line 205
     const-string v3, "ro.operator.optr"
 
     invoke-static {v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
+    # add
+    iput-object v1, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mOperator:Ljava/lang/String;
 
-    .line 206
     .local v1, optr:Ljava/lang/String;
     if-eqz v1, :cond_0
 
-    .line 207
     iget v3, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mSimSlotId:I
 
     if-nez v3, :cond_2
 
-    .line 208
     const/4 v3, 0x2
 
     iput v3, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mColor:I
 
-    .line 214
     :cond_0
     :goto_0
     sget-object v3, Lcom/mediatek/telephony/SimInfoManager;->SimBackgroundRes:[I
 
     array-length v2, v3
 
-    .line 215
     .local v2, size:I
     iget v3, v0, Lcom/mediatek/telephony/SimInfoManager$SimInfoRecord;->mColor:I
 
