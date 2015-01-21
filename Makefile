@@ -128,8 +128,10 @@ baidu_modify_apps := Phone
 # The default value is 0.
 # If 1, hide the soft mainkeys. If 0, display the soft mainkeys.
 # You should configure the property according to your device.
-#override_property += \
-#    qemu.hw.mainkeys=1
+override_property += \
+    ro.secure=0 \
+    persist.sys.usb.config=mtp,adb \
+    persist.service.adb.enable=1 \
 
 # The property decide whether the device support the phone book index in the sim card.
 # If true, support the phone book index. If false, don't support the phone book index.
