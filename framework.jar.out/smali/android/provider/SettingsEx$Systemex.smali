@@ -39,13 +39,11 @@
     .locals 1
 
     .prologue
-    .line 217
     const/4 v0, 0x0
 
     sput-object v0, Landroid/provider/SettingsEx$Systemex;->mNameValueCache:Landroid/provider/SettingsEx$NameValueCache;
 
-    .line 518
-    const-string v0, "content://settings/systemex"
+    const-string v0, "content://settings/system"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
