@@ -1745,64 +1745,60 @@
 
     invoke-virtual {p0, p1, v0}, Lcom/android/internal/widget/LockPatternUtils;->clearLockEx(ZZ)V
 
+    #const-string v0, "lockscreen.lockmode_type"
+
+    #const-wide/16 v1, 0x2
+
+    #invoke-direct {p0, v0, v1, v2}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
+
+    return-void
+.end method
+
+.method public clearLockEx(ZZ)V
+    .locals 5
+    .parameter "isFallback"
+    .parameter "isHwFallback"
+
+    .prologue
+    const-wide/16 v3, 0x0
+
+    const/4 v1, 0x0
+
+    if-nez p1, :cond_0
+
+    if-nez p2, :cond_0
+
+    invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->deleteGallery()V
+
+    invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->clearVoiceUnlock()V
+
+    :cond_0
+    const/high16 v0, 0x1
+
+    invoke-virtual {p0, v1, v0}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPassword(Ljava/lang/String;I)V
+
+    if-nez p2, :cond_1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/android/internal/widget/LockPatternUtils;->setLockPatternEnabled(Z)V
+
+    invoke-virtual {p0, v1}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPattern(Ljava/util/List;)V
+
+    const-string v0, "lockscreen.password_type"
+
+    invoke-direct {p0, v0, v3, v4}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
+
     const-string v0, "lockscreen.lockmode_type"
 
     const-wide/16 v1, 0x2
 
     invoke-direct {p0, v0, v1, v2}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
 
-    return-void
-.end method
+    const-string v0, "lockscreen.password_type_alternate"
 
-.method public clearLockEx(ZZ)V
-    .locals 4
-    .parameter "isFallback"
-    .parameter "isHwFallback"
+    invoke-direct {p0, v0, v3, v4}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
 
-    .prologue
-    const-wide/16 v2, 0x0
-
-    const/4 v1, 0x0
-
-    .line 460
-    if-nez p1, :cond_0
-
-    if-nez p2, :cond_0
-
-    .line 461
-    invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->deleteGallery()V
-
-    .line 463
-    invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->clearVoiceUnlock()V
-
-    .line 465
-    :cond_0
-    const/high16 v0, 0x1
-
-    invoke-virtual {p0, v1, v0}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPassword(Ljava/lang/String;I)V
-
-    .line 466
-    if-nez p2, :cond_1
-
-    .line 467
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Lcom/android/internal/widget/LockPatternUtils;->setLockPatternEnabled(Z)V
-
-    .line 468
-    invoke-virtual {p0, v1}, Lcom/android/internal/widget/LockPatternUtils;->saveLockPattern(Ljava/util/List;)V
-
-    .line 469
-    const-string/jumbo v0, "lockscreen.password_type"
-
-    invoke-direct {p0, v0, v2, v3}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
-
-    .line 470
-    const-string/jumbo v0, "lockscreen.password_type_alternate"
-
-    invoke-direct {p0, v0, v2, v3}, Lcom/android/internal/widget/LockPatternUtils;->setLong(Ljava/lang/String;J)V
-
-    .line 472
     :cond_1
     return-void
 .end method
