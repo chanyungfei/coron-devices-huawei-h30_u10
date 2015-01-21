@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.baidu.deviceoriginalsettings.ColorTemperatureSettingsPreference android:title="@string/color_temperature_title" android:key="color_temperature_seekbar" android:summary="@string/color_temperature_summary" android:dialogTitle="@string/color_temperature_title" />
+</PreferenceScreen>

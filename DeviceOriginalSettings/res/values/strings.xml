@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Device Original Settings</string>
+    <string name="color_temperature_title">Color temperature</string>
+    <string name="color_temperature_summary">Adjust the sharpest degree of the screen.</string>
+    <string name="color_temperature_default">Default</string>
+    <string name="color_temperature_warm">Warm</string>
+    <string name="color_temperature_cold">Cold</string>
+    <string name="finger_glove_mode_title">Gloves mode</string>
+    <string name="finger_glove_summary_on">Gloves mode On</string>
+    <string name="finger_glove_summary_off">Gloves mode Off</string>
+    <string name="glovemode_prop_info">Gloves mode can support user to touch the screen with little space.Enable it can touch with Gloves.</string>
+    <string name="glovemode_never_propmt">Never prompts</string>
+    <string name="smart_backlight_title">Smart backlight</string>
+    <string name="smart_backlight_summary_on">Smart backlight On</string>
+    <string name="smart_backlight_summary_off">Smart backlight Off</string>
+    <string name="glovemode_confirm">OK</string>
+    <string name="dolby_mobile_settings_title">Dolby Mobile settings</string>
+    <string name="dolby_mobile_settings_summary">For more audio effects, connect a headset.</string>
+    <string name="power_manager">Power Manager</string>
+    <string name="power_manager_summary">The system will adjust the CPU usage and application network access frequency automatically to reduce power consumption.</string>
+</resources>
