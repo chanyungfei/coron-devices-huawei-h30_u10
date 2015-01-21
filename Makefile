@@ -132,6 +132,7 @@ override_property += \
     ro.secure=0 \
     persist.sys.usb.config=mtp,adb \
     persist.service.adb.enable=1 \
+    ro.config.hwtheme=0 \
 
 # The property decide whether the device support the phone book index in the sim card.
 # If true, support the phone book index. If false, don't support the phone book index.
