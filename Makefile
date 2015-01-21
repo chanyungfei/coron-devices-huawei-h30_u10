@@ -54,7 +54,7 @@ vendor_remove_files := set_immutable.list ons.bin
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := HwBluetoothImport MtkBt Stk1
+vendor_saved_apps := HwBluetoothImport MtkBt Stk1 HwDtsEffect
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
