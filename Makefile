@@ -145,6 +145,9 @@ override_property += \
 # The default value is Coron.
 # You should configure the property according to your ID, ie, replace "Coron" with your ID.
 override_property += \
+    ro.baidu.default_write.settable=true \
+    ro.baidu.2nd_storage.format=enable \
+    ro.baidu.asec.type=1 \
     ro.baidu.romer=Po_Chan \
     ro.baidu.romerinfo=http://www.weibo.com/pochanL \
 
