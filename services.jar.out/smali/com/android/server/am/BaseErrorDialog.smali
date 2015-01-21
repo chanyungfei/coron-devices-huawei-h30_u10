@@ -17,24 +17,20 @@
     .prologue
     const/high16 v3, 0x2
 
-    .line 32
-    const v1, 0x306001d
+    const v1, 0x10302fb
 
     invoke-direct {p0, p1, v1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
-    .line 74
     new-instance v1, Lcom/android/server/am/BaseErrorDialog$1;
 
     invoke-direct {v1, p0}, Lcom/android/server/am/BaseErrorDialog$1;-><init>(Lcom/android/server/am/BaseErrorDialog;)V
 
     iput-object v1, p0, Lcom/android/server/am/BaseErrorDialog;->mHandler:Landroid/os/Handler;
 
-    .line 83
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/android/server/am/BaseErrorDialog;->mConsuming:Z
 
-    .line 35
     invoke-virtual {p0}, Lcom/android/server/am/BaseErrorDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
@@ -59,25 +55,21 @@
 
     move-result-object v0
 
-    .line 39
     .local v0, attrs:Landroid/view/WindowManager$LayoutParams;
     const-string v1, "Error Dialog"
 
     invoke-virtual {v0, v1}, Landroid/view/WindowManager$LayoutParams;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 40
     invoke-virtual {p0}, Lcom/android/server/am/BaseErrorDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
-    .line 41
-    const v1, 0x1010355
+    const v1, #android:attr@alertDialogIcon#t
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->setIconAttribute(I)V
 
-    .line 42
     return-void
 .end method
 
@@ -110,8 +102,7 @@
     .parameter "enabled"
 
     .prologue
-    .line 60
-    const v1, 0x1020019
+    const v1, #android:id@button1#t
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->findViewById(I)Landroid/view/View;
 
@@ -128,7 +119,7 @@
 
     .line 64
     :cond_0
-    const v1, 0x102001a
+    const v1, #android:id@button2#t
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->findViewById(I)Landroid/view/View;
 
@@ -146,7 +137,7 @@
 
     .line 68
     :cond_1
-    const v1, 0x102001b
+    const v1, #android:id@button3#t
 
     invoke-virtual {p0, v1}, Lcom/android/server/am/BaseErrorDialog;->findViewById(I)Landroid/view/View;
 
