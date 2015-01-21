@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_seconds_ago">
+        <item quantity="other">Prieš %d sekundžių</item>
+        <item quantity="zero">Prieš %d sekundžių</item>
+        <item quantity="one">Prieš 1 sekundę</item>
+        <item quantity="two">Prieš %d sekundes</item>
+        <item quantity="few">Prieš %d sekundes</item>
+        <item quantity="many">Prieš %d sekundės</item>
+    </plurals>
+    <plurals name="num_minutes_ago">
+        <item quantity="other">Prieš %d minučių</item>
+        <item quantity="zero">Prieš %d minučių</item>
+        <item quantity="one">Prieš 1 minutę</item>
+        <item quantity="two">Prieš %d minutes</item>
+        <item quantity="few">Prieš %d minutes</item>
+        <item quantity="many">Prieš %d minutės</item>
+    </plurals>
+    <plurals name="num_hours_ago">
+        <item quantity="other">Prieš %d valandų</item>
+        <item quantity="zero">Prieš %d valandų</item>
+        <item quantity="one">Prieš 1 valandą</item>
+        <item quantity="two">Prieš %d valandas</item>
+        <item quantity="few">Prieš %d valandas</item>
+        <item quantity="many">Prieš %d valandos</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="other">Paskutinės %d dienų.</item>
+        <item quantity="zero">Per paskutines %d dienų.</item>
+        <item quantity="one">Per paskutinę %d dieną.</item>
+        <item quantity="two">Per paskutines %d dienas.</item>
+        <item quantity="few">Paskutinės %d dienos.</item>
+        <item quantity="many">Paskutinės %d dienos.</item>
+    </plurals>
+    <plurals name="num_days_ago">
+        <item quantity="other">Prieš %d dienų</item>
+        <item quantity="zero">Prieš %d dienų</item>
+        <item quantity="one">vakar</item>
+        <item quantity="two">Prieš %d dienas</item>
+        <item quantity="few">Prieš %d dienas</item>
+        <item quantity="many">Prieš %d dienos</item>
+    </plurals>
+    <plurals name="in_num_seconds">
+        <item quantity="other">per %d sekundžių</item>
+        <item quantity="zero">per %d sekundžių</item>
+        <item quantity="one">per 1 sekundę</item>
+        <item quantity="two">per %d sekundes</item>
+        <item quantity="few">per %d sekundes</item>
+        <item quantity="many">per %d sekundės</item>
+    </plurals>
+    <plurals name="in_num_minutes">
+        <item quantity="other">per %d minučių</item>
+        <item quantity="zero">per %d minučių</item>
+        <item quantity="one">per 1 minutę</item>
+        <item quantity="two">per %d minutes</item>
+        <item quantity="few">per %d minutes</item>
+        <item quantity="many">per %d minutės</item>
+    </plurals>
+    <plurals name="in_num_hours">
+        <item quantity="other">per %d valandų</item>
+        <item quantity="zero">per %d valandų</item>
+        <item quantity="one">per 1 valandą</item>
+        <item quantity="two">per %d valandas</item>
+        <item quantity="few">per %d valandas</item>
+        <item quantity="many">per %d valandos</item>
+    </plurals>
+    <plurals name="in_num_days">
+        <item quantity="other">per %d dienų</item>
+        <item quantity="zero">per %d dienų</item>
+        <item quantity="one">rytoj</item>
+        <item quantity="two">per %d dienas</item>
+        <item quantity="few">per %d dienas</item>
+        <item quantity="many">per %d dienos</item>
+    </plurals>
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="other">Prieš %d sekundžių</item>
+        <item quantity="zero">Prieš %d sekundžių</item>
+        <item quantity="one">Prieš 1 sekundę</item>
+        <item quantity="two">Prieš %d sekundes</item>
+        <item quantity="few">Prieš %d sekundes</item>
+        <item quantity="many">Prieš %d sekundės</item>
+    </plurals>
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="other">Prieš %d minučių</item>
+        <item quantity="zero">Prieš %d minučių</item>
+        <item quantity="one">Prieš 1 minutę</item>
+        <item quantity="two">Prieš %d minutes</item>
+        <item quantity="few">Prieš %d minutes</item>
+        <item quantity="many">Prieš %d minutės</item>
+    </plurals>
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="other">Prieš %d valandų</item>
+        <item quantity="zero">Prieš %d valandų</item>
+        <item quantity="one">Prieš 1 valandą</item>
+        <item quantity="two">Prieš %d valandas</item>
+        <item quantity="few">Prieš %d valandas</item>
+        <item quantity="many">Prieš %d valandos</item>
+    </plurals>
+    <plurals name="abbrev_num_days_ago">
+        <item quantity="other">Prieš %d dienų</item>
+        <item quantity="zero">Prieš %d dienų</item>
+        <item quantity="one">vakar</item>
+        <item quantity="two">Prieš %d dienas</item>
+        <item quantity="few">Prieš %d dienas</item>
+        <item quantity="many">Prieš %d dienos</item>
+    </plurals>
+    <plurals name="abbrev_in_num_seconds">
+        <item quantity="other">per %d sekundžių</item>
+        <item quantity="zero">per %d sekundžių</item>
+        <item quantity="one">per 1 sekundę</item>
+        <item quantity="two">per %d sekundes</item>
+        <item quantity="few">per %d sekundes</item>
+        <item quantity="many">per %d sekundės</item>
+    </plurals>
+    <plurals name="abbrev_in_num_minutes">
+        <item quantity="other">per %d minučių</item>
+        <item quantity="zero">per %d minučių</item>
+        <item quantity="one">per 1 minutę</item>
+        <item quantity="two">per %d minutes</item>
+        <item quantity="few">per %d minutes</item>
+        <item quantity="many">per %d minutės</item>
+    </plurals>
+    <plurals name="abbrev_in_num_hours">
+        <item quantity="other">per %d valandų</item>
+        <item quantity="zero">per %d valandų</item>
+        <item quantity="one">per 1 valandą</item>
+        <item quantity="two">per %d valandas</item>
+        <item quantity="few">per %d valandas</item>
+        <item quantity="many">per %d valandos</item>
+    </plurals>
+    <plurals name="abbrev_in_num_days">
+        <item quantity="other">per %d dienų</item>
+        <item quantity="zero">per %d dienų</item>
+        <item quantity="one">rytoj</item>
+        <item quantity="two">per %d dienas</item>
+        <item quantity="few">per %d dienas</item>
+        <item quantity="many">per %d dienos</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="other">galimi „Wi-Fi“ tinklai</item>
+        <item quantity="zero">galimi „Wi-Fi“ tinklai</item>
+        <item quantity="one">Galimas „Wi-Fi“ tinklas</item>
+        <item quantity="two">galimi „Wi-Fi“ tinklai</item>
+        <item quantity="few">galimi „Wi-Fi“ tinklai</item>
+        <item quantity="many">galimi „Wi-Fi“ tinklai</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="other">Atidaryti galimus „Wi-Fi“ tinklus</item>
+        <item quantity="zero">Atidaryti galimus „Wi-Fi“ tinklus</item>
+        <item quantity="one">Galimas atviras „Wi-Fi“ tinklas</item>
+        <item quantity="two">Atidaryti galimus „Wi-Fi“ tinklus</item>
+        <item quantity="few">Atidaryti galimus „Wi-Fi“ tinklus</item>
+        <item quantity="many">Atidaryti galimus „Wi-Fi“ tinklus</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="other">%1$d iš %2$d</item>
+        <item quantity="zero">%1$d iš %2$d</item>
+        <item quantity="one">1 atitiktis</item>
+        <item quantity="two">%1$d iš %2$d</item>
+        <item quantity="few">%1$d iš %2$d</item>
+        <item quantity="many">%1$d iš %2$d</item>
+    </plurals>
+    <plurals name="duration_seconds">
+        <item quantity="other">%d sek.</item>
+        <item quantity="zero">%d sek.</item>
+        <item quantity="one">1 sek.</item>
+        <item quantity="two">%d sek.</item>
+        <item quantity="few">%d sek.</item>
+        <item quantity="many">%d sek.</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d min.</item>
+        <item quantity="zero">%d min.</item>
+        <item quantity="one">1 min.</item>
+        <item quantity="two">%d min.</item>
+        <item quantity="few">%d min.</item>
+        <item quantity="many">%d min.</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d val.</item>
+        <item quantity="zero">%d val.</item>
+        <item quantity="one">1 val.</item>
+        <item quantity="two">%d val.</item>
+        <item quantity="few">%d val.</item>
+        <item quantity="many">%d val.</item>
+    </plurals>
+</resources>
