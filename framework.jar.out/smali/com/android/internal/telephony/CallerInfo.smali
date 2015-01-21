@@ -3,6 +3,14 @@
 .source "CallerInfo.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/internal/telephony/CallerInfo$BaiduInjector;
+    }
+.end annotation
+
+
 # static fields
 .field public static final PAYPHONE_NUMBER:Ljava/lang/String; = "-3"
 
@@ -40,9 +48,19 @@
 
 .field public isCachedPhotoCurrent:Z
 
+.field public label:Ljava/lang/String;
+
 .field private mIsEmergency:Z
 
 .field private mIsVoiceMail:Z
+
+.field public mPhotoHeight:I
+
+.field public mPhotoID:I
+
+.field public mPhotoWidth:I
+
+.field public mViewMode:I
 
 .field public name:Ljava/lang/String;
 
@@ -553,10 +571,11 @@
     :goto_2
     iput-boolean v4, v2, Lcom/android/internal/telephony/CallerInfo;->shouldSendToVoicemail:Z
 
-    .line 299
     iput-boolean v5, v2, Lcom/android/internal/telephony/CallerInfo;->contactExists:Z
 
-    .line 303
+
+    invoke-static {v2, p2}, Lcom/android/internal/telephony/CallerInfo$BaiduInjector;->initCallerInfoExt(Lcom/android/internal/telephony/CallerInfo;Landroid/database/Cursor;)V
+
     .end local v0           #columnIndex:I
     :cond_6
     :goto_3
@@ -2034,8 +2053,7 @@
     .parameter "context"
 
     .prologue
-    .line 471
-    const v0, 0x10402e5
+    const v0, #android:string@emergency_call_dialog_number_for_display#t
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2043,17 +2061,14 @@
 
     iput-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
-    .line 473
-    const v0, 0x108045b
+    const v0, #android:drawable@picture_emergency#t
 
     iput v0, p0, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
 
-    .line 474
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/internal/telephony/CallerInfo;->mIsEmergency:Z
 
-    .line 475
     return-object p0
 .end method
 
@@ -2110,8 +2125,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 485
-    const v0, 0x10402e5
+    const v0, #android:string@emergency_call_dialog_number_for_display#t
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2119,23 +2133,18 @@
 
     iput-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
-    .line 486
-    const v0, 0x108045b
+    const v0, #android:drawable@picture_emergency#t
 
     iput v0, p0, Lcom/android/internal/telephony/CallerInfo;->photoResource:I
 
-    .line 487
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/internal/telephony/CallerInfo;->mIsEmergency:Z
 
-    .line 488
     iput p3, p0, Lcom/android/internal/telephony/CallerInfo;->caller_simId:I
 
-    .line 489
     iput-object p2, p0, Lcom/android/internal/telephony/CallerInfo;->emergencyNumber:Ljava/lang/String;
 
-    .line 490
     return-object p0
 .end method
 
@@ -2413,4 +2422,24 @@
     iget-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
     goto :goto_0
+.end method
+
+.method static synthetic access$sget-VDBG-988cc2()Z
+    .locals 1
+
+    .prologue
+    sget-boolean v0, Lcom/android/internal/telephony/CallerInfo;->VDBG:Z
+
+    return v0
+.end method
+
+.method public updateGeoDescriptionAndLabel(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 0
+    .parameter "context"
+    .parameter "fallbackNumber"
+
+    .prologue
+    invoke-static {p0, p1, p2}, Lcom/android/internal/telephony/CallerInfo$BaiduInjector;->updateGeoDescriptionAndLabel(Lcom/android/internal/telephony/CallerInfo;Landroid/content/Context;Ljava/lang/String;)V
+
+    return-void
 .end method

@@ -358,7 +358,7 @@
 
     .line 744
     .local v4, resources:Landroid/content/res/Resources;
-    const v6, 0x106006b
+    const v6, #android:color@config_defaultNotificationColor#t
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -366,8 +366,7 @@
 
     iput v6, p0, Lcom/android/server/NotificationManagerService;->mDefaultNotificationColor:I
 
-    .line 746
-    const v6, 0x10e001c
+    const v6, #android:integer@config_defaultNotificationLedOn#t
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -375,8 +374,7 @@
 
     iput v6, p0, Lcom/android/server/NotificationManagerService;->mDefaultNotificationLedOn:I
 
-    .line 748
-    const v6, 0x10e001d
+    const v6, #android:integer@config_defaultNotificationLedOff#t
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -384,8 +382,7 @@
 
     iput v6, p0, Lcom/android/server/NotificationManagerService;->mDefaultNotificationLedOff:I
 
-    .line 751
-    const v6, 0x1070039
+    const v6, #android:array@config_defaultNotificationVibePattern#t
 
     sget-object v7, Lcom/android/server/NotificationManagerService;->DEFAULT_VIBRATE_PATTERN:[J
 
@@ -395,8 +392,7 @@
 
     iput-object v6, p0, Lcom/android/server/NotificationManagerService;->mDefaultVibrationPattern:[J
 
-    .line 756
-    const v6, 0x107003a
+    const v6, #android:array@config_notificationFallbackVibePattern#t
 
     sget-object v7, Lcom/android/server/NotificationManagerService;->DEFAULT_VIBRATE_PATTERN:[J
 
@@ -1626,7 +1622,7 @@
     :cond_2
     new-instance v25, Landroid/widget/RemoteViews;
 
-    const v4, 0x10900f3
+    const v4, #android:layout@notification_template_cover_base#t
 
     move-object/from16 v0, v25
 
@@ -1672,8 +1668,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2051
-    const v4, 0x1020320
+    const v4, #android:id@actions#t
 
     const/4 v5, 0x0
 
@@ -1861,7 +1856,7 @@
     .end local v10           #ai:Landroid/content/pm/ApplicationInfo;
     .end local v21           #pkgContext:Landroid/content/Context;
     :goto_1
-    const v4, 0x10405ad
+    const v4, #android:string@notification_cover_hint#t
 
     move-object/from16 v0, v24
 
@@ -1894,23 +1889,21 @@
 
     .line 2092
     :cond_5
-    const v4, 0x10203d1
+    const v4, #android:id@notification_content_cover_hint#t
 
     move-object/from16 v0, v25
 
     invoke-virtual {v0, v4, v15}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    .line 2093
-    const v4, 0x1020320
+    const v4, #android:id@actions#t
 
     move-object/from16 v0, v25
 
     invoke-virtual {v0, v4}, Landroid/widget/RemoteViews;->removeAllViews(I)V
 
-    .line 2094
     const/4 v4, 0x0
 
-    const v5, 0x104047d
+    const v5, #android:string@allow#t
 
     move-object/from16 v0, v24
 
@@ -1928,7 +1921,7 @@
 
     .line 2095
     .local v14, button:Landroid/widget/RemoteViews;
-    const v4, 0x1020320
+    const v4, #android:id@actions#t
 
     move-object/from16 v0, v25
 
@@ -1937,7 +1930,7 @@
     .line 2096
     const/4 v4, 0x0
 
-    const v5, 0x104047e
+    const v5, #android:string@deny#t
 
     move-object/from16 v0, v24
 
@@ -1955,14 +1948,12 @@
 
     move-result-object v14
 
-    .line 2097
-    const v4, 0x1020320
+    const v4, #android:id@actions#t
 
     move-object/from16 v0, v25
 
     invoke-virtual {v0, v4, v14}, Landroid/widget/RemoteViews;->addView(ILandroid/widget/RemoteViews;)V
 
-    .line 2099
     move-object/from16 v0, v20
 
     iget-object v4, v0, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
@@ -1971,25 +1962,21 @@
 
     move-result-object v26
 
-    .line 2101
     .local v26, rvNotification:Landroid/widget/RemoteViews;
     move-object/from16 v0, v20
 
     iget-object v9, v0, Landroid/app/Notification;->bigContentView:Landroid/widget/RemoteViews;
 
-    .line 2102
     .local v9, rvOld:Landroid/widget/RemoteViews;
     if-eqz v26, :cond_1
 
-    .line 2103
-    const v4, 0x10203d0
+    const v4, #android:id@notification_content_origin#t
 
     move-object/from16 v0, v25
 
     invoke-virtual {v0, v4}, Landroid/widget/RemoteViews;->removeAllViews(I)V
 
-    .line 2104
-    const v4, 0x10203d0
+    const v4, #android:id@notification_content_origin#t
 
     move-object/from16 v0, v25
 
@@ -2249,12 +2236,12 @@
     .prologue
     const/4 v3, 0x0
 
-    const v1, 0x102031f
+    const v1, #android:id@action0#t
 
     .line 2035
     new-instance v0, Landroid/widget/RemoteViews;
 
-    const v2, 0x10900f1
+    const v2, #android:layout@notification_action_cover#t
 
     invoke-direct {v0, p1, v2}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
@@ -6583,7 +6570,7 @@
 
     .line 1214
     .local v6, n:Lcom/android/internal/statusbar/StatusBarNotification;
-    const v7, 0x1080082
+    const v7, #android:drawable@stat_sys_download_done#t
 
     move-object/from16 v0, p6
 
@@ -7786,7 +7773,7 @@
 
     move v8, p6
 
-    invoke-virtual/range {v0 .. v8}, Lcom/android/server/NotificationManagerService;->enqueueNotificationInternal(Ljava/lang/String;IILjava/lang/String;ILandroid/app/Notification;[II)V
+    invoke-virtual/range {v0 .. v8}, Lcom/android/server/NotificationManagerService;->enqueueNotificationInternalBaidu(Ljava/lang/String;IILjava/lang/String;ILandroid/app/Notification;[II)V
 
     .line 1025
     return-void
@@ -8623,4 +8610,142 @@
 
     .line 813
     return-void
+.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iput-mCallRinging-eb5352(Lcom/android/server/NotificationManagerService;Z)Z
+#    .locals 0
+#    .parameter "x0"
+#    .parameter "x1"
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mCallRinging:Z
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iput-mIPOBootup-328eaf(Lcom/android/server/NotificationManagerService;Z)Z
+#    .locals 0
+#    .parameter "x0"
+#    .parameter "x1"
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mIPOBootup:Z
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iget-mAttentionLight-9c9aa1(Lcom/android/server/NotificationManagerService;)Lcom/android/server/LightsService$Light;
+#    .locals 1
+#    .parameter "x0"
+#    .prologue
+#    iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mAttentionLight:Lcom/android/server/LightsService$Light;
+#    return-object v0
+#.end method
+
+.method private isBlockedPackage(Ljava/lang/String;ILandroid/app/Notification;)Z
+    .locals 5
+    .parameter "packageName"
+    .parameter "id"
+    .parameter "notification"
+
+    .prologue
+    const/4 v3, 0x1
+
+    const/4 v2, 0x0
+
+    .local v2, rst:Z
+    if-eqz p1, :cond_0
+
+    if-nez p3, :cond_1
+
+    :cond_0
+    :goto_0
+    return v3
+
+    :cond_1
+    iget v4, p3, Landroid/app/Notification;->icon:I
+
+    if-eqz v4, :cond_2
+
+    iget-object v4, p3, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
+
+    if-eqz v4, :cond_0
+
+    :cond_2
+    const-string v3, "android"
+
+    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    invoke-static {}, Lcom/baidu/notificationdefense/NotificationDefenseManager;->getInstance()Lcom/baidu/notificationdefense/NotificationDefenseManager;
+
+    move-result-object v1
+
+    .local v1, ndm:Lcom/baidu/notificationdefense/NotificationDefenseManager;
+    invoke-virtual {v1, p1, p2, p3}, Lcom/baidu/notificationdefense/NotificationDefenseManager;->defense(Ljava/lang/String;ILandroid/app/Notification;)Z
+
+    move-result v0
+
+    .local v0, blocked:Z
+    if-eqz v0, :cond_3
+
+    const/4 v2, 0x1
+
+    .end local v0           #blocked:Z
+    .end local v1           #ndm:Lcom/baidu/notificationdefense/NotificationDefenseManager;
+    :cond_3
+    move v3, v2
+
+    goto :goto_0
+.end method
+
+.method public enqueueNotificationInternalBaidu(Ljava/lang/String;IILjava/lang/String;ILandroid/app/Notification;[II)V
+    .locals 9
+    .parameter "pkg"
+    .parameter "callingUid"
+    .parameter "callingPid"
+    .parameter "tag"
+    .parameter "id"
+    .parameter "notification"
+    .parameter "idOut"
+    .parameter "userId"
+
+    .prologue
+    invoke-direct {p0, p1, p5, p6}, Lcom/android/server/NotificationManagerService;->isBlockedPackage(Ljava/lang/String;ILandroid/app/Notification;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    :goto_0
+    return-void
+
+    :cond_0
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v2
+
+    invoke-static {}, Landroid/os/Binder;->getCallingPid()I
+
+    move-result v3
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v4, p4
+
+    move v5, p5
+
+    move-object v6, p6
+
+    move-object/from16 v7, p7
+
+    move/from16 v8, p8
+
+    invoke-virtual/range {v0 .. v8}, Lcom/android/server/NotificationManagerService;->enqueueNotificationInternal(Ljava/lang/String;IILjava/lang/String;ILandroid/app/Notification;[II)V
+
+    goto :goto_0
 .end method

@@ -4846,11 +4846,9 @@
 
     move-result-object v24
 
-    .line 1930
     .local v24, resources:Landroid/content/res/Resources;
-    const v19, 0x10f000e
+    const v19, #android:xml@storage_list#t
 
-    .line 1931
     .local v19, id:I
     move-object/from16 v0, v24
 
@@ -5074,17 +5072,13 @@
 
     mul-long v10, v28, v30
 
-    .line 1968
     .local v10, maxFileSize:J
     if-eqz v5, :cond_3
 
-    .line 1969
     const/16 v23, 0x0
 
-    .line 1970
-    const v4, 0x10405a3
+    const v4, #android:string@storage_phone#t
 
-    .line 1971
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/MountService;->mContext:Landroid/content/Context;
@@ -12183,4 +12177,182 @@
 
     .line 775
     return-void
+.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iget-mUnmountPrimary-12311a(Lcom/android/server/MountService;)Z
+#    .locals 1
+#    .parameter "x0"
+#    .prologue
+#    iget-boolean v0, p0, Lcom/android/server/MountService;->mUnmountPrimary:Z
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iput-mUnmountPrimary-fc1a9e(Lcom/android/server/MountService;Z)Z
+#    .locals 0
+#    .parameter "x0"
+#    .parameter "x1"
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/MountService;->mUnmountPrimary:Z
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$invoke-updateDefaultpath-f22587(Lcom/android/server/MountService;)V
+#    .locals 0
+#    .parameter "x0"
+#    .prologue
+#    invoke-direct {p0}, Lcom/android/server/MountService;->updateDefaultpath()V
+#    return-void
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$iput-mFirstTime_SwapStateForSDSwapMountPoint-5e8bd9(Lcom/android/server/MountService;Z)Z
+#    .locals 0
+#    .parameter "x0"
+#    .parameter "x1"
+#    .prologue
+#    iput-boolean p1, p0, Lcom/android/server/MountService;->mFirstTime_SwapStateForSDSwapMountPoint:Z
+#    return p1
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$invoke-getPrimaryPhysicalVolume-5c9335(Lcom/android/server/MountService;)Landroid/os/storage/StorageVolume;
+#    .locals 1
+#    .parameter "x0"
+#    .prologue
+#    invoke-direct {p0}, Lcom/android/server/MountService;->getPrimaryPhysicalVolume()Landroid/os/storage/StorageVolume;
+#    move-result-object v0
+#    return-object v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$invoke-updateSDExist-c0cd30(Lcom/android/server/MountService;)Z
+#    .locals 1
+#    .parameter "x0"
+#    .prologue
+#    invoke-direct {p0}, Lcom/android/server/MountService;->updateSDExist()Z
+#    move-result v0
+#    return v0
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$invoke-doSDSwapVolumeUpdate-131988(Lcom/android/server/MountService;)V
+#    .locals 0
+#    .parameter "x0"
+#    .prologue
+#    invoke-direct {p0}, Lcom/android/server/MountService;->doSDSwapVolumeUpdate()V
+#    return-void
+#.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$invoke-sendSDSwapIntent-e12bd7(Lcom/android/server/MountService;)V
+#    .locals 0
+#    .parameter "x0"
+#    .prologue
+#    invoke-direct {p0}, Lcom/android/server/MountService;->sendSDSwapIntent()V
+#    return-void
+#.end method
+
+.method private updateAsecVolumeStateBaidu(Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
+    .locals 6
+    .parameter "volume"
+    .parameter "state"
+
+    .prologue
+    const/4 v5, 0x0
+
+    invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->getPath()Ljava/lang/String;
+
+    move-result-object v1
+
+    .local v1, path:Ljava/lang/String;
+    invoke-static {}, Landroid/os/Environment;->getAsecVolumeDirectory()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, asecPath:Ljava/lang/String;
+    const-string v2, "MountService"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "asecPath is "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {}, Landroid/os/Environment;->isAsecVolumeAvailable()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const-string v2, "unmounted"
+
+    invoke-virtual {v2, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, p0, Lcom/android/server/MountService;->mPms:Lcom/android/server/pm/PackageManagerService;
+
+    invoke-virtual {v2, v5, v5}, Lcom/android/server/pm/PackageManagerService;->updateExternalMediaStatus(ZZ)V
+
+    iget-object v2, p0, Lcom/android/server/MountService;->mObbActionHandler:Lcom/android/server/MountService$ObbActionHandler;
+
+    iget-object v3, p0, Lcom/android/server/MountService;->mObbActionHandler:Lcom/android/server/MountService$ObbActionHandler;
+
+    const/4 v4, 0x5
+
+    invoke-virtual {v3, v4, v1}, Lcom/android/server/MountService$ObbActionHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/android/server/MountService$ObbActionHandler;->sendMessage(Landroid/os/Message;)Z
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    const-string v2, "mounted"
+
+    invoke-virtual {v2, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    iget-object v2, p0, Lcom/android/server/MountService;->mPms:Lcom/android/server/pm/PackageManagerService;
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v2, v3, v5}, Lcom/android/server/pm/PackageManagerService;->updateExternalMediaStatus(ZZ)V
+
+    goto :goto_0
 .end method
