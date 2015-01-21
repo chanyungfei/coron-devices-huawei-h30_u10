@@ -50,7 +50,7 @@
     iget-object v1, p0, Lcom/android/server/ConnectivityService$1;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->sendDataActivityBroadcast(IZ)V
-    invoke-static {v1, v0, p2}, Lcom/android/server/ConnectivityService;->access$300(Lcom/android/server/ConnectivityService;IZ)V
+    invoke-static {v1, v0, p2}, Lcom/android/server/ConnectivityService;->access$invoke-sendDataActivityBroadcast-6f6bbe(Lcom/android/server/ConnectivityService;IZ)V
 
     .line 1248
     return-void

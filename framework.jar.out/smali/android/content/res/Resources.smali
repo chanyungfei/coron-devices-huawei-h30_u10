@@ -226,7 +226,7 @@
     return-void
 .end method
 
-.method protected constructor <init>()V
+.method constructor <init>()V
     .locals 3
 
     .prologue
@@ -1024,10 +1024,10 @@
 
     if-eqz v1, :cond_1
 
-    new-instance v0, Landroid/content/res/ResourcesEx;
+    new-instance v0, Landroid/content/res/BaiduResources;
 
     .end local v0           #ret:Landroid/content/res/Resources;
-    invoke-direct {v0}, Landroid/content/res/ResourcesEx;-><init>()V
+    invoke-direct {v0}, Landroid/content/res/BaiduResources;-><init>()V
 
     .line 217
     .restart local v0       #ret:Landroid/content/res/Resources;
@@ -1042,10 +1042,10 @@
 
     .line 215
     :cond_1
-    new-instance v0, Landroid/content/res/Resources;
+    new-instance v0, Landroid/content/res/BaiduResources;
 
     .end local v0           #ret:Landroid/content/res/Resources;
-    invoke-direct {v0}, Landroid/content/res/Resources;-><init>()V
+    invoke-direct {v0}, Landroid/content/res/BaiduResources;-><init>()V
 
     goto :goto_0
 
@@ -2022,7 +2022,7 @@
     throw v1
 .end method
 
-.method protected getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
+.method private getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
     .locals 4
     .parameter
     .parameter "key"
@@ -5002,7 +5002,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13, v9, v10}, Landroid/content/res/Resources;->getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
+    invoke-direct {v0, v13, v9, v10}, Landroid/content/res/Resources;->getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 

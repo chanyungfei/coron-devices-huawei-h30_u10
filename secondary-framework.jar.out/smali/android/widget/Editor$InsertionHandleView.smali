@@ -386,6 +386,7 @@
 
     if-gez v2, :cond_1
 
+    invoke-direct {p0}, Landroid/widget/Editor$InsertionHandleView;->updatePopupPosition()V
     :cond_0
     const/4 v2, 0x0
 

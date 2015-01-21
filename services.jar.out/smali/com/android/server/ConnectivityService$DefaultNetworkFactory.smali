@@ -131,7 +131,7 @@
     iget-object v1, p0, Lcom/android/server/ConnectivityService$DefaultNetworkFactory;->mTrackerHandler:Landroid/os/Handler;
 
     #calls: Lcom/android/server/ConnectivityService;->makeWimaxStateTracker(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
-    invoke-static {v0, v1}, Lcom/android/server/ConnectivityService;->access$200(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
+    invoke-static {v0, v1}, Lcom/android/server/ConnectivityService;->access$invoke-makeWimaxStateTracker-c4b30b(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
 
     move-result-object v0
 

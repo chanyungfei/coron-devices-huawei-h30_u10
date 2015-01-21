@@ -323,7 +323,7 @@
 
     move-object/from16 v1, v44
 
-    invoke-direct {v7, v3, v5, v0, v1}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
+    invoke-direct {v7, v3, v5, v0, v1}, Lcom/android/server/am/BaiduAppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

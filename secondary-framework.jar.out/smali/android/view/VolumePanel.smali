@@ -2387,7 +2387,7 @@
     return-void
 .end method
 
-.method private updateSlider(Landroid/view/VolumePanel$StreamControl;)V
+.method protected updateSlider(Landroid/view/VolumePanel$StreamControl;)V
     .locals 5
     .parameter "sc"
 
@@ -4850,7 +4850,7 @@
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     :cond_1
-    invoke-direct {p0}, Landroid/view/VolumePanel;->createSliders()V
+    invoke-virtual {p0}, Landroid/view/VolumePanel;->createSliders()V
 
     :cond_2
     monitor-exit p0

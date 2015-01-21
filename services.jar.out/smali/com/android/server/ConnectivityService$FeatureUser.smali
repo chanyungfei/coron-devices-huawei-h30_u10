@@ -266,7 +266,7 @@
     move-result-object v0
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 1313
     iget v0, p0, Lcom/android/server/ConnectivityService$FeatureUser;->mRadioNum:I
@@ -279,7 +279,7 @@
     iget-object v0, p0, Lcom/android/server/ConnectivityService$FeatureUser;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->stopUsingNetworkFeatureGemini(Lcom/android/server/ConnectivityService$FeatureUser;Z)I
-    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$500(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
+    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$invoke-stopUsingNetworkFeatureGemini-aeaf6d(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
 
     .line 1323
     :goto_0
@@ -290,7 +290,7 @@
     iget-object v0, p0, Lcom/android/server/ConnectivityService$FeatureUser;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->stopUsingNetworkFeature(Lcom/android/server/ConnectivityService$FeatureUser;Z)I
-    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$600(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
+    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$invoke-stopUsingNetworkFeature-4e38e2(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
 
     goto :goto_0
 .end method
@@ -371,7 +371,7 @@
     move-result-object v0
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 1332
     const-string v0, "enableMMS"
@@ -395,7 +395,7 @@
     iget-object v0, p0, Lcom/android/server/ConnectivityService$FeatureUser;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->stopUsingNetworkFeatureGemini(Lcom/android/server/ConnectivityService$FeatureUser;Z)I
-    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$500(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
+    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$invoke-stopUsingNetworkFeatureGemini-aeaf6d(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
 
     .line 1342
     :cond_0
@@ -407,7 +407,7 @@
     iget-object v0, p0, Lcom/android/server/ConnectivityService$FeatureUser;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->stopUsingNetworkFeature(Lcom/android/server/ConnectivityService$FeatureUser;Z)I
-    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$600(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
+    invoke-static {v0, p0, v5}, Lcom/android/server/ConnectivityService;->access$invoke-stopUsingNetworkFeature-4e38e2(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
 
     goto :goto_0
 .end method

@@ -69,13 +69,13 @@
     move-result-object v4
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 1904
     iget-object v4, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mRulesLock:Ljava/lang/Object;
-    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$iget-mRulesLock-24c6e0(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -86,7 +86,7 @@
     iget-object v4, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mMeteredIfaces:Ljava/util/HashSet;
-    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$900(Lcom/android/server/ConnectivityService;)Ljava/util/HashSet;
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$iget-mMeteredIfaces-9a81c5(Lcom/android/server/ConnectivityService;)Ljava/util/HashSet;
 
     move-result-object v4
 
@@ -112,7 +112,7 @@
     iget-object v4, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mMeteredIfaces:Ljava/util/HashSet;
-    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$900(Lcom/android/server/ConnectivityService;)Ljava/util/HashSet;
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$iget-mMeteredIfaces-9a81c5(Lcom/android/server/ConnectivityService;)Ljava/util/HashSet;
 
     move-result-object v4
 
@@ -176,13 +176,13 @@
     move-result-object v3
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 1921
     iget-object v3, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mActiveDefaultNetwork:I
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$1000(Lcom/android/server/ConnectivityService;)I
+    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$iget-mActiveDefaultNetwork-66cd4f(Lcom/android/server/ConnectivityService;)I
 
     move-result v1
 
@@ -198,7 +198,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$1100(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
+    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$iget-mNetTrackers-13acac(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
 
     move-result-object v3
 
@@ -277,13 +277,13 @@
     move-result-object v1
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 1886
     iget-object v1, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mRulesLock:Ljava/lang/Object;
-    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$iget-mRulesLock-24c6e0(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -294,7 +294,7 @@
     iget-object v1, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mUidRules:Landroid/util/SparseIntArray;
-    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$800(Lcom/android/server/ConnectivityService;)Landroid/util/SparseIntArray;
+    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$iget-mUidRules-df91b9(Lcom/android/server/ConnectivityService;)Landroid/util/SparseIntArray;
 
     move-result-object v1
 
@@ -319,7 +319,7 @@
     iget-object v1, p0, Lcom/android/server/ConnectivityService$2;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mUidRules:Landroid/util/SparseIntArray;
-    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$800(Lcom/android/server/ConnectivityService;)Landroid/util/SparseIntArray;
+    invoke-static {v1}, Lcom/android/server/ConnectivityService;->access$iget-mUidRules-df91b9(Lcom/android/server/ConnectivityService;)Landroid/util/SparseIntArray;
 
     move-result-object v1
 

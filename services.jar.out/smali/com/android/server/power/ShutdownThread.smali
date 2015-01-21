@@ -574,7 +574,8 @@
 
     invoke-interface {v8}, Lcom/mediatek/common/bootanim/IBootAnimExt;->isCustBootAnim()Z
 
-    move-result v2
+    #move-result v2
+    const/4 v2, 0x0
 
     .line 409
     const-string v8, "ShutdownThread"
@@ -985,7 +986,7 @@
     :goto_6
     new-instance v8, Landroid/app/ProgressDialog;
 
-    invoke-direct {v8, v3}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
+    invoke-direct {v8, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
     sput-object v8, Lcom/android/server/power/ShutdownThread;->pd:Landroid/app/ProgressDialog;
 
@@ -999,6 +1000,13 @@
 
     const v11, #android:string@shutdown_progress#t
 
+    sget-boolean v0, Lcom/android/server/power/ShutdownThread;->mReboot:Z
+
+    if-eqz v0, :cond_baidu_1
+
+    const v11, #android:string@reboot_progress#t
+
+    :cond_baidu_1
     invoke-virtual {p0, v11}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v11
@@ -1357,6 +1365,9 @@
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v4
+
+    # disable vendor ipo
+    const/4 v4, 0x0
 
     if-ne v4, v2, :cond_2
 
@@ -2332,7 +2343,7 @@
 
     const v3, 0x3060061
 
-    invoke-direct {v5, p0, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v5, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     sget-boolean v3, Lcom/android/server/power/ShutdownThread;->mReboot:Z
 
@@ -2385,6 +2396,8 @@
     move-result-object v3
 
     sput-object v3, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
+
+    invoke-static {p0}, Lcom/android/server/power/ShutdownThread$BaiduInjector;->createRebootDialogBaidu(Landroid/content/Context;)V
 
     .line 277
     sget-object v3, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
@@ -3983,15 +3996,6 @@
     goto/16 :goto_b
 .end method
 
-# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$sput-mReboot-d6390c(Z)Z
-#    .locals 0
-#    .parameter "x0"
-#    .prologue
-#    sput-boolean p0, Lcom/android/server/power/ShutdownThread;->mReboot:Z
-#    return p0
-#.end method
-
 .method static synthetic access$sput-mRebootReason-ba5398(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .parameter "x0"
@@ -4018,4 +4022,13 @@
     sget-boolean v0, Lcom/android/server/power/ShutdownThread;->mRebootSafeMode:Z
 
     return v0
+.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+.method static synthetic access$sput-mReboot-d6390c(Z)Z
+    .locals 0
+    .parameter "x0"
+    .prologue
+    sput-boolean p0, Lcom/android/server/power/ShutdownThread;->mReboot:Z
+    return p0
 .end method

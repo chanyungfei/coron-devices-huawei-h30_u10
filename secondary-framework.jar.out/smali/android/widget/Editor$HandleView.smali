@@ -1103,16 +1103,16 @@
 
     iput-boolean v9, p0, Landroid/widget/Editor$HandleView;->mIsDragging:Z
 
-    invoke-direct {p0, v9, p1}, Landroid/widget/Editor$HandleView;->showPopoupWindowAfterDrag(ILandroid/view/MotionEvent;)V
+    invoke-static {}, Landroid/widget/Editor$BaiduEditorInjector;->hideDelayed()V
 
     goto/16 :goto_0
 
     :pswitch_3
     iput-boolean v9, p0, Landroid/widget/Editor$HandleView;->mIsDragging:Z
 
-    const/4 v8, 0x0
+    #const/4 v8, 0x0
 
-    invoke-direct {p0, v9, v8}, Landroid/widget/Editor$HandleView;->showPopoupWindowAfterDrag(ILandroid/view/MotionEvent;)V
+    #invoke-direct {p0, v9, v8}, Landroid/widget/Editor$HandleView;->showPopoupWindowAfterDrag(ILandroid/view/MotionEvent;)V
 
     goto/16 :goto_0
 
@@ -1329,12 +1329,13 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroid/widget/Editor$HandleView;->this$0:Landroid/widget/Editor;
+    new-instance v0, Landroid/widget/Editor$BaiduActionPopupWindow;
 
-    #calls: Landroid/widget/Editor;->createActionPopupWindow()Landroid/widget/Editor$ActionPopupWindow;
-    invoke-static {v0}, Landroid/widget/Editor;->access$2300(Landroid/widget/Editor;)Landroid/widget/Editor$ActionPopupWindow;
+    iget-object v1, p0, Landroid/widget/Editor$HandleView;->this$0:Landroid/widget/Editor;
 
-    move-result-object v0
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Landroid/widget/Editor$BaiduActionPopupWindow;-><init>(Landroid/widget/Editor;Landroid/widget/Editor$1;)V
 
     iput-object v0, p0, Landroid/widget/Editor$HandleView;->mActionPopupWindow:Landroid/widget/Editor$ActionPopupWindow;
 

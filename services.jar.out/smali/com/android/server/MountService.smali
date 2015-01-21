@@ -6413,14 +6413,14 @@
 
     invoke-virtual {v6, v7}, Lcom/android/server/MountService$ObbActionHandler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 1204
     :cond_1
     :goto_1
+    invoke-direct {p0, p1, p2}, Lcom/android/server/MountService;->updateAsecVolumeStateBaidu(Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
+
     iget-object v7, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 
     monitor-enter v7
 
-    .line 1205
     :try_start_2
     iget-object v6, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 

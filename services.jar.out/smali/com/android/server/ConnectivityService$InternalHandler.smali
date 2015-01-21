@@ -77,7 +77,7 @@
     iget-object v15, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTransitionWakeLockSerialNumber:I
-    invoke-static {v15}, Lcom/android/server/ConnectivityService;->access$2000(Lcom/android/server/ConnectivityService;)I
+    invoke-static {v15}, Lcom/android/server/ConnectivityService;->access$iget-mNetTransitionWakeLockSerialNumber-f1f6c5(Lcom/android/server/ConnectivityService;)I
 
     move-result v15
 
@@ -88,7 +88,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTransitionWakeLock:Landroid/os/PowerManager$WakeLock;
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$2100(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$iget-mNetTransitionWakeLock-638a23(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v13
 
@@ -104,7 +104,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTransitionWakeLock:Landroid/os/PowerManager$WakeLock;
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$2100(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$iget-mNetTransitionWakeLock-638a23(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v13
 
@@ -116,7 +116,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTransitionWakeLockCausedBy:Ljava/lang/String;
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$2200(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$iget-mNetTransitionWakeLockCausedBy-175d54(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -155,7 +155,7 @@
     move-result-object v13
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -205,7 +205,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleInetConditionChange(II)V
-    invoke-static {v13, v6, v2}, Lcom/android/server/ConnectivityService;->access$2300(Lcom/android/server/ConnectivityService;II)V
+    invoke-static {v13, v6, v2}, Lcom/android/server/ConnectivityService;->access$invoke-handleInetConditionChange-54db02(Lcom/android/server/ConnectivityService;II)V
 
     goto :goto_0
 
@@ -230,7 +230,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleInetConditionHoldEnd(II)V
-    invoke-static {v13, v6, v10}, Lcom/android/server/ConnectivityService;->access$2400(Lcom/android/server/ConnectivityService;II)V
+    invoke-static {v13, v6, v10}, Lcom/android/server/ConnectivityService;->access$invoke-handleInetConditionHoldEnd-83b565(Lcom/android/server/ConnectivityService;II)V
 
     goto/16 :goto_0
 
@@ -249,7 +249,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleSetNetworkPreference(I)V
-    invoke-static {v13, v9}, Lcom/android/server/ConnectivityService;->access$2500(Lcom/android/server/ConnectivityService;I)V
+    invoke-static {v13, v9}, Lcom/android/server/ConnectivityService;->access$invoke-handleSetNetworkPreference-cbd214(Lcom/android/server/ConnectivityService;I)V
 
     goto/16 :goto_0
 
@@ -274,7 +274,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleSetMobileData(Z)V
-    invoke-static {v13, v3}, Lcom/android/server/ConnectivityService;->access$2600(Lcom/android/server/ConnectivityService;Z)V
+    invoke-static {v13, v3}, Lcom/android/server/ConnectivityService;->access$invoke-handleSetMobileData-fc3ea6(Lcom/android/server/ConnectivityService;Z)V
 
     goto/16 :goto_0
 
@@ -292,7 +292,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleDeprecatedGlobalHttpProxy()V
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$2700(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$invoke-handleDeprecatedGlobalHttpProxy-c4ba05(Lcom/android/server/ConnectivityService;)V
 
     goto/16 :goto_0
 
@@ -320,7 +320,7 @@
     iget v14, v0, Landroid/os/Message;->arg2:I
 
     #calls: Lcom/android/server/ConnectivityService;->handleSetDependencyMet(IZ)V
-    invoke-static {v13, v14, v5}, Lcom/android/server/ConnectivityService;->access$2800(Lcom/android/server/ConnectivityService;IZ)V
+    invoke-static {v13, v14, v5}, Lcom/android/server/ConnectivityService;->access$invoke-handleSetDependencyMet-d83737(Lcom/android/server/ConnectivityService;IZ)V
 
     goto/16 :goto_0
 
@@ -338,7 +338,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mActiveDefaultNetwork:I
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$1000(Lcom/android/server/ConnectivityService;)I
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$iget-mActiveDefaultNetwork-66cd4f(Lcom/android/server/ConnectivityService;)I
 
     move-result v13
 
@@ -356,12 +356,12 @@
     iget-object v14, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mActiveDefaultNetwork:I
-    invoke-static {v14}, Lcom/android/server/ConnectivityService;->access$1000(Lcom/android/server/ConnectivityService;)I
+    invoke-static {v14}, Lcom/android/server/ConnectivityService;->access$iget-mActiveDefaultNetwork-66cd4f(Lcom/android/server/ConnectivityService;)I
 
     move-result v14
 
     #calls: Lcom/android/server/ConnectivityService;->handleDnsConfigurationChange(I)V
-    invoke-static {v13, v14}, Lcom/android/server/ConnectivityService;->access$2900(Lcom/android/server/ConnectivityService;I)V
+    invoke-static {v13, v14}, Lcom/android/server/ConnectivityService;->access$invoke-handleDnsConfigurationChange-3b2e79(Lcom/android/server/ConnectivityService;I)V
 
     goto/16 :goto_0
 
@@ -380,7 +380,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->sendStickyBroadcast(Landroid/content/Intent;)V
-    invoke-static {v13, v4}, Lcom/android/server/ConnectivityService;->access$3000(Lcom/android/server/ConnectivityService;Landroid/content/Intent;)V
+    invoke-static {v13, v4}, Lcom/android/server/ConnectivityService;->access$invoke-sendStickyBroadcast-ad6300(Lcom/android/server/ConnectivityService;Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -411,7 +411,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleSetPolicyDataEnable(IZ)V
-    invoke-static {v13, v7, v3}, Lcom/android/server/ConnectivityService;->access$3100(Lcom/android/server/ConnectivityService;IZ)V
+    invoke-static {v13, v7, v3}, Lcom/android/server/ConnectivityService;->access$invoke-handleSetPolicyDataEnable-879744(Lcom/android/server/ConnectivityService;IZ)V
 
     goto/16 :goto_0
 
@@ -430,7 +430,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$1800(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$iget-mLockdownTracker-a7571d(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
 
     move-result-object v13
 
@@ -442,7 +442,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$1800(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$iget-mLockdownTracker-a7571d(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
 
     move-result-object v14
 
@@ -490,7 +490,7 @@
     move/from16 v0, v16
 
     #calls: Lcom/android/server/ConnectivityService;->handleNotificationChange(ZILandroid/app/Notification;)V
-    invoke-static {v15, v14, v0, v13}, Lcom/android/server/ConnectivityService;->access$3200(Lcom/android/server/ConnectivityService;ZILandroid/app/Notification;)V
+    invoke-static {v15, v14, v0, v13}, Lcom/android/server/ConnectivityService;->access$invoke-handleNotificationChange-c27a61(Lcom/android/server/ConnectivityService;ZILandroid/app/Notification;)V
 
     goto/16 :goto_0
 
@@ -544,7 +544,7 @@
     move-result-object v13
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 3474
     move-object/from16 v0, p0
@@ -552,7 +552,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleMobileDataConnectionChange(II)V
-    invoke-static {v13, v8, v11}, Lcom/android/server/ConnectivityService;->access$3300(Lcom/android/server/ConnectivityService;II)V
+    invoke-static {v13, v8, v11}, Lcom/android/server/ConnectivityService;->access$invoke-handleMobileDataConnectionChange-46ebb5(Lcom/android/server/ConnectivityService;II)V
 
     goto/16 :goto_0
 
@@ -585,7 +585,7 @@
     move-result-object v13
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 3482
     move-object/from16 v0, p0
@@ -604,7 +604,7 @@
     iget-object v13, v0, Lcom/android/server/ConnectivityService$InternalHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleMobileDataUpdate()V
-    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$3400(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v13}, Lcom/android/server/ConnectivityService;->access$invoke-handleMobileDataUpdate-45cf1e(Lcom/android/server/ConnectivityService;)V
 
     goto/16 :goto_0
 

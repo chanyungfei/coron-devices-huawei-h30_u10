@@ -690,55 +690,52 @@
 
     iput-object v10, p0, Lcom/android/server/AlarmManagerService;->mDateChangeSender:Landroid/app/PendingIntent;
 
-    .line 356
     new-instance v10, Lcom/android/server/AlarmManagerService$ClockReceiver;
 
     invoke-direct {v10, p0}, Lcom/android/server/AlarmManagerService$ClockReceiver;-><init>(Lcom/android/server/AlarmManagerService;)V
 
     iput-object v10, p0, Lcom/android/server/AlarmManagerService;->mClockReceiver:Lcom/android/server/AlarmManagerService$ClockReceiver;
 
-    .line 357
     iget-object v10, p0, Lcom/android/server/AlarmManagerService;->mClockReceiver:Lcom/android/server/AlarmManagerService$ClockReceiver;
 
     invoke-virtual {v10}, Lcom/android/server/AlarmManagerService$ClockReceiver;->scheduleTimeTickEvent()V
 
-    .line 358
     iget-object v10, p0, Lcom/android/server/AlarmManagerService;->mClockReceiver:Lcom/android/server/AlarmManagerService$ClockReceiver;
 
     invoke-virtual {v10}, Lcom/android/server/AlarmManagerService$ClockReceiver;->scheduleDateChangedEvent()V
 
-    .line 359
     new-instance v10, Lcom/android/server/AlarmManagerService$UninstallReceiver;
 
     invoke-direct {v10, p0}, Lcom/android/server/AlarmManagerService$UninstallReceiver;-><init>(Lcom/android/server/AlarmManagerService;)V
 
     iput-object v10, p0, Lcom/android/server/AlarmManagerService;->mUninstallReceiver:Lcom/android/server/AlarmManagerService$UninstallReceiver;
 
-    .line 362
     invoke-direct {p0}, Lcom/android/server/AlarmManagerService;->initPhbConfig()V
 
-    .line 364
     new-instance v10, Lcom/android/server/AlarmManagerService$PowerOffAlarmReceiver;
 
     invoke-direct {v10, p0}, Lcom/android/server/AlarmManagerService$PowerOffAlarmReceiver;-><init>(Lcom/android/server/AlarmManagerService;)V
 
     iput-object v10, p0, Lcom/android/server/AlarmManagerService;->mReceiver:Lcom/android/server/AlarmManagerService$PowerOffAlarmReceiver;
 
-    .line 366
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v10, p0, Lcom/android/server/AlarmManagerService;->mAlarmIconPackageList:Ljava/util/ArrayList;
 
-    .line 367
     iget-object v10, p0, Lcom/android/server/AlarmManagerService;->mAlarmIconPackageList:Ljava/util/ArrayList;
 
     const-string v11, "com.android.deskclock"
 
     invoke-virtual {v10, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 370
+    iget-object v10, p0, Lcom/android/server/AlarmManagerService;->mAlarmIconPackageList:Ljava/util/ArrayList;
+
+    const-string v11, "com.baidu.baiduclock"
+
+    invoke-virtual {v10, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     :try_start_0
     const-string v10, "DmAgent"
 
@@ -10686,6 +10683,8 @@
 
     .line 572
     :cond_a
+    invoke-static {p0, v2, v4}, Lcom/android/server/AlarmManagerService$BaiduInjector;->setLockAgain(Lcom/android/server/AlarmManagerService;Lcom/android/server/AlarmManagerService$Alarm;I)V
+
     monitor-exit v11
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

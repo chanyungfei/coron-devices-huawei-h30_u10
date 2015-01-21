@@ -24,7 +24,6 @@
     .parameter
 
     .prologue
-    .line 4522
     iput-object p1, p0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -38,7 +37,6 @@
     .parameter "x1"
 
     .prologue
-    .line 4522
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;-><init>(Lcom/android/server/ConnectivityService;)V
 
     return-void
@@ -52,20 +50,16 @@
     .parameter "intent"
 
     .prologue
-    .line 4524
     if-nez p2, :cond_0
 
-    .line 4598
     :goto_0
     return-void
 
-    .line 4525
     :cond_0
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4526
     .local v1, action:Ljava/lang/String;
     const-string v10, "ConnectivityService"
 
@@ -89,19 +83,17 @@
 
     invoke-static {v10, v11}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4527
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mSynchronizedObject:Ljava/lang/Object;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$4500(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mSynchronizedObject-a299b6(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v11
 
     monitor-enter v11
 
-    .line 4528
     :try_start_0
     const-string v10, "android.intent.action.DATA_DEFAULT_SIM"
 
@@ -111,13 +103,12 @@
 
     if-eqz v10, :cond_6
 
-    .line 4530
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -135,7 +126,6 @@
 
     add-int/lit8 v5, v10, -0x1
 
-    .line 4531
     .local v5, preSlotId:I
     const-string v10, "simid"
 
@@ -151,7 +141,6 @@
 
     move-result-object v7
 
-    .line 4533
     .local v7, simId:Ljava/lang/Long;
     invoke-virtual {v7}, Ljava/lang/Long;->longValue()J
 
@@ -173,11 +162,9 @@
 
     if-nez v10, :cond_4
 
-    .line 4534
     :cond_1
     const/4 v8, -0x1
 
-    .line 4540
     .local v8, slotId:I
     :goto_1
     move-object/from16 v0, p0
@@ -185,7 +172,7 @@
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -207,13 +194,12 @@
 
     invoke-static {v10, v12, v13}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 4542
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mRestoreLastSlotConn:Z
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$4600(Lcom/android/server/ConnectivityService;)Z
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mRestoreLastSlotConn-805147(Lcom/android/server/ConnectivityService;)Z
 
     move-result v10
 
@@ -223,13 +209,12 @@
 
     if-le v8, v10, :cond_2
 
-    .line 4543
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -249,14 +234,13 @@
 
     invoke-static {v10, v12, v13}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 4546
     :cond_2
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -268,14 +252,13 @@
 
     move-result-object v2
 
-    .line 4547
     .local v2, changeSimId:Ljava/lang/Long;
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -291,18 +274,16 @@
 
     invoke-static {v10, v12, v13, v14}, Landroid/provider/Settings$System;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
-    .line 4549
     const/4 v10, -0x1
 
     if-eq v8, v10, :cond_5
 
-    .line 4550
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -316,20 +297,19 @@
 
     invoke-static {v10, v12, v13}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    iget-object v9, p0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
+    move-object/from16 v0, p0
+    iget-object v9, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     invoke-static {v9, v2}, Lcom/android/server/ConnectivityService$BaiduInjector;->setPreferSimSetting(Lcom/android/server/ConnectivityService;Ljava/lang/Long;)V
 
-    .line 4556
     :goto_2
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleMobileDataConnectionChange(II)V
-    invoke-static {v10, v5, v8}, Lcom/android/server/ConnectivityService;->access$3300(Lcom/android/server/ConnectivityService;II)V
+    invoke-static {v10, v5, v8}, Lcom/android/server/ConnectivityService;->access$invoke-handleMobileDataConnectionChange-46ebb5(Lcom/android/server/ConnectivityService;II)V
 
-    .line 4597
     .end local v2           #changeSimId:Ljava/lang/Long;
     .end local v5           #preSlotId:I
     .end local v7           #simId:Ljava/lang/Long;
@@ -349,7 +329,6 @@
 
     throw v10
 
-    .line 4537
     .restart local v5       #preSlotId:I
     .restart local v7       #simId:Ljava/lang/Long;
     :cond_4
@@ -359,7 +338,7 @@
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -374,7 +353,6 @@
     .restart local v8       #slotId:I
     goto/16 :goto_1
 
-    .line 4553
     .restart local v2       #changeSimId:Ljava/lang/Long;
     :cond_5
     move-object/from16 v0, p0
@@ -382,7 +360,7 @@
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -398,7 +376,6 @@
 
     goto :goto_2
 
-    .line 4557
     .end local v2           #changeSimId:Ljava/lang/Long;
     .end local v5           #preSlotId:I
     .end local v7           #simId:Ljava/lang/Long;
@@ -412,7 +389,6 @@
 
     if-eqz v10, :cond_7
 
-    .line 4558
     const-string v10, "tethering_isconnected"
 
     const/4 v12, 0x0
@@ -423,7 +399,6 @@
 
     move-result v3
 
-    .line 4559
     .local v3, isConnected:Z
     move-object/from16 v0, p0
 
@@ -433,7 +408,6 @@
 
     goto :goto_3
 
-    .line 4560
     .end local v3           #isConnected:Z
     :cond_7
     const-string v10, "android.intent.action.SERVICE_STATE"
@@ -444,21 +418,17 @@
 
     if-eqz v10, :cond_a
 
-    .line 4561
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v4
 
-    .line 4562
     .local v4, obtainBundle:Landroid/os/Bundle;
     if-eqz v4, :cond_9
 
-    .line 4564
     invoke-static {v4}, Landroid/telephony/ServiceState;->newFromBundle(Landroid/os/Bundle;)Landroid/telephony/ServiceState;
 
     move-result-object v6
 
-    .line 4565
     .local v6, serviceState:Landroid/telephony/ServiceState;
     invoke-virtual {v6}, Landroid/telephony/ServiceState;->getState()I
 
@@ -466,7 +436,6 @@
 
     if-nez v10, :cond_3
 
-    .line 4566
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
@@ -487,7 +456,7 @@
     const/4 v13, 0x0
 
     #calls: Lcom/android/server/ConnectivityService;->setDataOffNotification(ZZ)V
-    invoke-static {v12, v10, v13}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;ZZ)V
+    invoke-static {v12, v10, v13}, Lcom/android/server/ConnectivityService;->access$invoke-setDataOffNotification-6fa32e(Lcom/android/server/ConnectivityService;ZZ)V
 
     goto :goto_3
 
@@ -496,17 +465,15 @@
 
     goto :goto_4
 
-    .line 4571
     .end local v6           #serviceState:Landroid/telephony/ServiceState;
     :cond_9
     const-string v10, "get bundle error!!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     goto :goto_3
 
-    .line 4573
     .end local v4           #obtainBundle:Landroid/os/Bundle;
     :cond_a
     const-string v10, "android.intent.action.LOCALE_CHANGED"
@@ -517,7 +484,6 @@
 
     if-eqz v10, :cond_c
 
-    .line 4574
     move-object/from16 v0, p0
 
     iget-object v12, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
@@ -538,7 +504,7 @@
     const/4 v13, 0x1
 
     #calls: Lcom/android/server/ConnectivityService;->setDataOffNotification(ZZ)V
-    invoke-static {v12, v10, v13}, Lcom/android/server/ConnectivityService;->access$4700(Lcom/android/server/ConnectivityService;ZZ)V
+    invoke-static {v12, v10, v13}, Lcom/android/server/ConnectivityService;->access$invoke-setDataOffNotification-6fa32e(Lcom/android/server/ConnectivityService;ZZ)V
 
     goto/16 :goto_3
 
@@ -547,7 +513,6 @@
 
     goto :goto_5
 
-    .line 4584
     :cond_c
     const-string v10, "android.intent.action.SIM_INDICATOR_STATE_CHANGED"
 
@@ -581,18 +546,16 @@
 
     if-eqz v10, :cond_3
 
-    .line 4588
     :cond_d
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->getValidSimNum()I
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$4800(Lcom/android/server/ConnectivityService;)I
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$invoke-getValidSimNum-14b8f6(Lcom/android/server/ConnectivityService;)I
 
     move-result v9
 
-    .line 4589
     .local v9, validSimNum:I
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -613,18 +576,16 @@
     move-result-object v10
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
-    .line 4590
     if-nez v9, :cond_e
 
-    .line 4591
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v10
 
@@ -640,17 +601,15 @@
 
     goto/16 :goto_3
 
-    .line 4592
     :cond_e
     if-lez v9, :cond_3
 
-    .line 4593
     move-object/from16 v0, p0
 
     iget-object v10, v0, Lcom/android/server/ConnectivityService$ConnectivityServiceReceiver;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleMobileDataUpdate()V
-    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$3400(Lcom/android/server/ConnectivityService;)V
+    invoke-static {v10}, Lcom/android/server/ConnectivityService;->access$invoke-handleMobileDataUpdate-45cf1e(Lcom/android/server/ConnectivityService;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

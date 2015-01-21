@@ -77,7 +77,7 @@
     const-string v0, "DefaultDataSimObserver onChange"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 3864
     iget-object v0, p0, Lcom/android/server/ConnectivityService$DefaultDataSimObserver;->mHandler:Landroid/os/Handler;

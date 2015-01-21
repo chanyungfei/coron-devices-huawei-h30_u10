@@ -33,7 +33,7 @@
     .prologue
     .line 1832
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {p0}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {p0}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -56,7 +56,7 @@
     .line 1833
     .local v1, preferSimID:Ljava/lang/Long;
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {p0}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {p0}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -153,7 +153,7 @@
     .prologue
     .line 1846
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static {p0}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static {p0}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v0
 

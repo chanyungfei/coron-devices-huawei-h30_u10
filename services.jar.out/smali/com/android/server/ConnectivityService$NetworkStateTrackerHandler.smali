@@ -119,7 +119,7 @@
     move-result-object v3
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 3319
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
@@ -153,7 +153,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleConnectionFailure(Landroid/net/NetworkInfo;)V
-    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$1300(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
+    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$invoke-handleConnectionFailure-106e63(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
 
     .line 3352
     :cond_1
@@ -161,7 +161,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$1800(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
+    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$iget-mLockdownTracker-a7571d(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
 
     move-result-object v3
 
@@ -171,7 +171,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
-    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$1800(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
+    invoke-static {v3}, Lcom/android/server/ConnectivityService;->access$iget-mLockdownTracker-a7571d(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
 
     move-result-object v3
 
@@ -193,7 +193,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleCaptivePortalTrackerCheck(Landroid/net/NetworkInfo;)V
-    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$1400(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
+    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$invoke-handleCaptivePortalTrackerCheck-817c8b(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
 
     goto :goto_1
 
@@ -207,7 +207,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleDisconnect(Landroid/net/NetworkInfo;)V
-    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$1500(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
+    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$invoke-handleDisconnect-938d26(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
 
     goto :goto_1
 
@@ -311,7 +311,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->sendSuspendedBroadcast(Landroid/net/NetworkInfo;)V
-    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$1600(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
+    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$invoke-sendSuspendedBroadcast-caac48(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
 
     goto/16 :goto_1
 
@@ -327,7 +327,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleDisconnect(Landroid/net/NetworkInfo;)V
-    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$1500(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
+    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$invoke-handleDisconnect-938d26(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
 
     goto/16 :goto_1
 
@@ -341,7 +341,7 @@
     iget-object v3, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #calls: Lcom/android/server/ConnectivityService;->handleConnect(Landroid/net/NetworkInfo;)V
-    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$1700(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
+    invoke-static {v3, v0}, Lcom/android/server/ConnectivityService;->access$invoke-handleConnect-dee202(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
 
     goto/16 :goto_1
 
@@ -365,7 +365,7 @@
     const/4 v5, 0x0
 
     #calls: Lcom/android/server/ConnectivityService;->handleConnectivityChange(IZ)V
-    invoke-static {v3, v4, v5}, Lcom/android/server/ConnectivityService;->access$1900(Lcom/android/server/ConnectivityService;IZ)V
+    invoke-static {v3, v4, v5}, Lcom/android/server/ConnectivityService;->access$invoke-handleConnectivityChange-f215d7(Lcom/android/server/ConnectivityService;IZ)V
 
     goto/16 :goto_0
 
@@ -389,7 +389,7 @@
     iget-object v4, p0, Lcom/android/server/ConnectivityService$NetworkStateTrackerHandler;->this$0:Lcom/android/server/ConnectivityService;
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
-    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$1100(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
+    invoke-static {v4}, Lcom/android/server/ConnectivityService;->access$iget-mNetTrackers-13acac(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
 
     move-result-object v4
 

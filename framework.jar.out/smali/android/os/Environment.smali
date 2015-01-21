@@ -48,6 +48,8 @@
 #the value of this static final field might be set in the static constructor
 .field private static final IS_SWITCH_SD_ENABLED:Z = false
 
+.field private static final ENV_SECONDARY_STORAGE:Ljava/lang/String; = "SECONDARY_STORAGE"
+
 .field public static final MEDIA_BAD_REMOVAL:Ljava/lang/String; = "bad_removal"
 
 .field public static final MEDIA_CHECKING:Ljava/lang/String; = "checking"

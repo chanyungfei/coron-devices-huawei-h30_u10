@@ -10,6 +10,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Landroid/widget/QuickContactBadge$QuickContactBadgeEx;,
+        Landroid/widget/QuickContactBadge$BaiduInjector;,
         Landroid/widget/QuickContactBadge$QueryHandler;
     }
 .end annotation
@@ -525,6 +526,12 @@
     const/4 v4, 0x0
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
+
+    invoke-static {}, Landroid/widget/QuickContactBadge$BaiduInjector;->enable()Z
+
+    move-result v1
+
+    if-nez v1, :cond_baidu_0
 
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 

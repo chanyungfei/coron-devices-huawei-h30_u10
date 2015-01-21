@@ -77,7 +77,7 @@
     const-string v0, "AirplaneModeObserver onChange"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 3886
     iget-object v0, p0, Lcom/android/server/ConnectivityService$AirplaneModeObserver;->mHandler:Landroid/os/Handler;

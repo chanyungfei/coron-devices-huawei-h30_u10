@@ -54,7 +54,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v17
 
@@ -87,7 +87,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mSmartKeyguardLevel-63cfb3(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v17
 
@@ -133,7 +133,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5000(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mPowerSavingLock-c6acbb(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v18
 
@@ -144,7 +144,7 @@
     const-string v17, "receive keyguard unlock intent!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5168
     sget-boolean v17, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
@@ -155,7 +155,7 @@
     const-string v17, "stop powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5170
     move-object/from16 v0, p0
@@ -165,7 +165,7 @@
     move-object/from16 v17, v0
 
     #calls: Lcom/android/server/ConnectivityService;->cancelPowerSaving()V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5100(Lcom/android/server/ConnectivityService;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-cancelPowerSaving-a5a71f(Lcom/android/server/ConnectivityService;)V
 
     .line 5171
     const/16 v17, 0x0
@@ -199,7 +199,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5000(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mPowerSavingLock-c6acbb(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v18
 
@@ -274,7 +274,7 @@
     move-result-object v17
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5197
     new-instance v17, Ljava/lang/StringBuilder;
@@ -302,7 +302,7 @@
     move-result-object v17
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5198
     new-instance v17, Ljava/lang/StringBuilder;
@@ -330,7 +330,7 @@
     move-result-object v17
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5202
     sget-boolean v17, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
@@ -351,7 +351,7 @@
     move-object/from16 v19, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
-    invoke-static/range {v19 .. v19}, Lcom/android/server/ConnectivityService;->access$1200(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
+    invoke-static/range {v19 .. v19}, Lcom/android/server/ConnectivityService;->access$iget-mContext-0729bd(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
 
     move-result-object v19
 
@@ -416,7 +416,7 @@
     move-result-object v17
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5208
     const/4 v7, 0x0
@@ -434,7 +434,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$1100(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mNetTrackers-13acac(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
 
     move-result-object v3
 
@@ -503,7 +503,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5000(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mPowerSavingLock-c6acbb(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v18
 
@@ -514,7 +514,7 @@
     const-string v17, "receive screen on intent! and stop powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5181
     sget-boolean v17, Lcom/android/server/ConnectivityService;->mStartPowerSaving:Z
@@ -525,7 +525,7 @@
     const-string v17, "stop powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5183
     move-object/from16 v0, p0
@@ -535,7 +535,7 @@
     move-object/from16 v17, v0
 
     #calls: Lcom/android/server/ConnectivityService;->cancelPowerSaving()V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5100(Lcom/android/server/ConnectivityService;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-cancelPowerSaving-a5a71f(Lcom/android/server/ConnectivityService;)V
 
     .line 5184
     const/16 v17, 0x0
@@ -623,7 +623,7 @@
 
     .local v13, listIndex:I
     :goto_3
-    invoke-static {}, Lcom/android/server/ConnectivityService;->access$5200()[I
+    invoke-static {}, Lcom/android/server/ConnectivityService;->access$sget-NETWORK_TYPE_WHITE_LIST-f61d0b()[I
 
     move-result-object v17
 
@@ -658,7 +658,7 @@
 
     move/from16 v17, v0
 
-    invoke-static {}, Lcom/android/server/ConnectivityService;->access$5200()[I
+    invoke-static {}, Lcom/android/server/ConnectivityService;->access$sget-NETWORK_TYPE_WHITE_LIST-f61d0b()[I
 
     move-result-object v19
 
@@ -734,7 +734,7 @@
     move-result-object v17
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5242
     .end local v13           #listIndex:I
@@ -760,7 +760,7 @@
     move-object/from16 v17, v0
 
     #calls: Lcom/android/server/ConnectivityService;->getPowerSavingState()Z
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5300(Lcom/android/server/ConnectivityService;)Z
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-getPowerSavingState-827be6(Lcom/android/server/ConnectivityService;)Z
 
     move-result v17
 
@@ -787,7 +787,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mSmartKeyguardLevel-63cfb3(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v17
 
@@ -810,7 +810,7 @@
     const-string v17, "start powersaving action!"
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     .line 5249
     if-nez v4, :cond_c
@@ -822,7 +822,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mSmartKeyguardLevel-63cfb3(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v17
 
@@ -847,7 +847,7 @@
     move-object/from16 v17, v0
 
     #calls: Lcom/android/server/ConnectivityService;->tryPowerSaving()V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5400(Lcom/android/server/ConnectivityService;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-tryPowerSaving-249631(Lcom/android/server/ConnectivityService;)V
 
     .line 5260
     :goto_4
@@ -935,7 +935,7 @@
     move-result-object v17
 
     #calls: Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$400(Ljava/lang/String;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-log-e2420b(Ljava/lang/String;)V
 
     goto/16 :goto_2
 
@@ -978,7 +978,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mSmartKeyguardLevel:Ljava/lang/String;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$4900(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mSmartKeyguardLevel-63cfb3(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
 
     move-result-object v17
 
@@ -1010,7 +1010,7 @@
     move-object/from16 v0, v17
 
     #calls: Lcom/android/server/ConnectivityService;->tryPowerSavingI(Z)V
-    invoke-static {v0, v14}, Lcom/android/server/ConnectivityService;->access$5500(Lcom/android/server/ConnectivityService;Z)V
+    invoke-static {v0, v14}, Lcom/android/server/ConnectivityService;->access$invoke-tryPowerSavingI-1adafa(Lcom/android/server/ConnectivityService;Z)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
@@ -1044,7 +1044,7 @@
     move-object/from16 v17, v0
 
     #getter for: Lcom/android/server/ConnectivityService;->mPowerSavingLock:Ljava/lang/Object;
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5000(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$iget-mPowerSavingLock-c6acbb(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
 
     move-result-object v18
 
@@ -1075,7 +1075,7 @@
     move-object/from16 v17, v0
 
     #calls: Lcom/android/server/ConnectivityService;->turnoffDC()V
-    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$5600(Lcom/android/server/ConnectivityService;)V
+    invoke-static/range {v17 .. v17}, Lcom/android/server/ConnectivityService;->access$invoke-turnoffDC-9528ea(Lcom/android/server/ConnectivityService;)V
 
     .line 5277
     :cond_13

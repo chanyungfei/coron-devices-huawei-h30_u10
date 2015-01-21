@@ -8982,6 +8982,8 @@
     :cond_5
     invoke-static {}, Landroid/os/AsyncTask;->init()V
 
+    invoke-static {v1}, Landroid/app/ActivityThread$BaiduInjector;->multiTheme_freeCanvas(Landroid/app/ActivityThread;)V
+
     sget-boolean v2, Landroid/app/ActivityThread;->IS_USER_BUILD:Z
 
     if-nez v2, :cond_6
@@ -13667,10 +13669,10 @@
 
     if-eqz v8, :cond_9
 
-    new-instance v6, Landroid/content/res/ResourcesEx;
+    new-instance v6, Landroid/content/res/Resources;
 
     .end local v6           #r:Landroid/content/res/Resources;
-    invoke-direct {v6, v0, v2, v1, p4}, Landroid/content/res/ResourcesEx;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)V
+    invoke-direct {v6, v0, v2, v1, p4}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)V
 
     .line 1904
     .restart local v6       #r:Landroid/content/res/Resources;
@@ -13779,10 +13781,10 @@
 
     .line 1895
     :cond_9
-    new-instance v6, Landroid/content/res/Resources;
+    new-instance v6, Landroid/content/res/BaiduResources;
 
     .end local v6           #r:Landroid/content/res/Resources;
-    invoke-direct {v6, v0, v2, v1, p4}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)V
+    invoke-direct {v6, v0, v2, v1, p4}, Landroid/content/res/BaiduResources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)V
 
     goto :goto_4
 

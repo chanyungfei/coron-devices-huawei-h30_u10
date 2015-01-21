@@ -44,6 +44,8 @@
 
 .field private emergencyNumber:Ljava/lang/String;
 
+.field public count:I
+
 .field public geoDescription:Ljava/lang/String;
 
 .field public isCachedPhotoCurrent:Z

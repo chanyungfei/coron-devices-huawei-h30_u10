@@ -1797,7 +1797,7 @@
     :cond_4
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v7}, Lcom/android/internal/app/AlertController;->setBackground(Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/view/View;ZLandroid/content/res/TypedArray;ZLandroid/view/View;)V
+    invoke-direct/range {v0 .. v7}, Lcom/android/internal/app/AlertController;->setBackgroundBaidu(Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/view/View;ZLandroid/content/res/TypedArray;ZLandroid/view/View;)V
 
     invoke-virtual {v5}, Landroid/content/res/TypedArray;->recycle()V
 

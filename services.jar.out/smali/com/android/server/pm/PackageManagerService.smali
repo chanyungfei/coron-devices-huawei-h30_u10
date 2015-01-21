@@ -23021,7 +23021,7 @@
     move-result-object v22
 
     .local v22, dataPathString:Ljava/lang/String;
-    invoke-static/range {p1 .. p1}, Lcom/android/server/pm/PackageManagerService;->isSystemApp(Landroid/content/pm/PackageParser$Package;)Z
+    invoke-static/range {p1 .. p1}, Lcom/android/server/pm/PackageManagerService;->isSystemAppBaidu(Landroid/content/pm/PackageParser$Package;)Z
 
     move-result v3
 
@@ -32481,6 +32481,8 @@
     const-string v4, "  "
 
     invoke-virtual {p1, v2, v4}, Landroid/content/IntentFilter;->dump(Landroid/util/Printer;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1, p5}, Lcom/android/server/pm/PackageManagerService;->removeSameFilterBaidu(Landroid/content/IntentFilter;I)V
 
     .line 9595
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mSettings:Lcom/android/server/pm/Settings;

@@ -22,9 +22,9 @@
 
 
 # instance fields
-.field protected mPasteTextView:Landroid/widget/TextView;
+.field mPasteTextView:Landroid/widget/TextView;
 
-.field protected mReplaceTextView:Landroid/widget/TextView;
+.field mReplaceTextView:Landroid/widget/TextView;
 
 .field final synthetic this$0:Landroid/widget/Editor;
 

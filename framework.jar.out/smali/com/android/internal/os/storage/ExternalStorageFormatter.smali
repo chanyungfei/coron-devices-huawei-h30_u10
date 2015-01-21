@@ -17,6 +17,8 @@
 
 .field private static final FORMAT_END:I = 0x1
 
+.field public static final FORMAT_COMPLETE:Ljava/lang/String; = "com.android.internal.os.storage.FORMAT_COMPLETE"
+
 .field public static final FORMAT_ONLY:Ljava/lang/String; = "com.android.internal.os.storage.FORMAT_ONLY"
 
 .field private static final FORMAT_START:I = 0x0
