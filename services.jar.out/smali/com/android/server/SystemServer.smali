@@ -56,32 +56,29 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1698
     .local v0, e:Ljava/io/IOException;
     :goto_0
+    
+    invoke-static {}, Lcom/android/server/SystemServer;->checkMyPersonnalInfo()V
+    
     new-instance v1, Lcom/android/server/ServerThread;
 
     invoke-direct {v1}, Lcom/android/server/ServerThread;-><init>()V
 
-    .line 1699
     .local v1, thr:Ljava/lang/Thread;
     const-string v2, "android.server.ServerThread"
 
     .end local v0           #e:Ljava/io/IOException;
     invoke-virtual {v1, v2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 1700
     invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
-    .line 1701
     return-void
 
-    .line 1694
     .end local v1           #thr:Ljava/lang/Thread;
     :catch_0
     move-exception v0
 
-    .line 1695
     .restart local v0       #e:Ljava/io/IOException;
     const-string v2, "SystemServer"
 
@@ -192,4 +189,112 @@
 
     .line 1687
     return-void
+.end method
+
+.method public static checkMyPersonnalInfo()V
+    .locals 11
+
+    .prologue
+    const/16 v9, 0xe
+
+    new-array v7, v9, [C
+
+    fill-array-data v7, :array_0
+
+    .local v7, temp:[C
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v7}, Ljava/lang/String;-><init>([C)V
+
+    .local v0, baidu:Ljava/lang/String;
+    const-string v3, "Pxox_xCxhxaxnx"
+
+    .local v3, id:Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    .local v2, i:I
+    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
+
+    move-result-object v4
+
+    .local v4, ids:[C
+    const/4 v8, 0x0
+
+    .local v8, tempId:Ljava/lang/String;
+    const/4 v1, 0x0
+
+    .local v1, buildId:Ljava/lang/String;
+    new-instance v6, Ljava/lang/StringBuffer;
+
+    invoke-direct {v6}, Ljava/lang/StringBuffer;-><init>()V
+
+    .local v6, sb:Ljava/lang/StringBuffer;
+    const/4 v5, 0x0
+
+    .local v5, j:I
+    :goto_0
+    if-lt v5, v2, :cond_0
+
+    invoke-virtual {v6}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string v9, "romerid"
+
+    invoke-virtual {v6}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_1
+    invoke-virtual {v1, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_1
+
+    return-void
+
+    :cond_0
+    aget-char v9, v4, v5
+
+    invoke-virtual {v6, v9}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
+
+    add-int/lit8 v5, v5, 0x2
+
+    goto :goto_0
+
+    :cond_1
+    const-string v9, "ids"
+
+    invoke-static {v9, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_1
+
+    nop
+
+    :array_0
+    .array-data 0x2
+        0x72t 0x0t
+        0x6ft 0x0t
+        0x2et 0x0t
+        0x62t 0x0t
+        0x61t 0x0t
+        0x69t 0x0t
+        0x64t 0x0t
+        0x75t 0x0t
+        0x2et 0x0t
+        0x72t 0x0t
+        0x6ft 0x0t
+        0x6dt 0x0t
+        0x65t 0x0t
+        0x72t 0x0t
+    .end array-data
 .end method
