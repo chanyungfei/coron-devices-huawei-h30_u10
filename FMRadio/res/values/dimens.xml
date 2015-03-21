@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="dimen" name="APKTOOL_DUMMY_0047">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_0048">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_0049">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_004a">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_004b">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_004c">false</item>
+    <dimen name="titlebar_height">48.0dip</dimen>
+    <dimen name="audio_control_top_padding">40.0dip</dimen>
+    <dimen name="audio_control_horizontal_padding">5.0dip</dimen>
+    <dimen name="freq_num_layout_left_margin">20.0dip</dimen>
+    <dimen name="tune_prev_top_padding">90.0dip</dimen>
+    <dimen name="freq_num_img_horizontal_padding">6.0dip</dimen>
+    <dimen name="big_num_top_margin">88.0dip</dimen>
+    <dimen name="small_num_top_margin">87.0dip</dimen>
+    <dimen name="num_flection_padding">4.0dip</dimen>
+    <dimen name="dot_top_margin">173.0dip</dimen>
+    <dimen name="freq_num_marginTop">34.0dip</dimen>
+    <dimen name="freq_num_firstMarginTop">14.0dip</dimen>
+    <dimen name="right_button_firstMarginTop">24.0dip</dimen>
+    <dimen name="freq_name_text_padding_left">10.0dip</dimen>
+    <dimen name="freq_name_text_padding_right">100.0dip</dimen>
+    <dimen name="freq_name_text_padding_top">60.0dip</dimen>
+    <dimen name="mhz_text_padding_left">30.0dip</dimen>
+    <dimen name="freq_num_button_horizontal_padding">6.0dip</dimen>
+    <dimen name="freq_small_num_img_horizontal_padding">6.0dip</dimen>
+    <dimen name="right_button_horizontal_padding">9.0dip</dimen>
 </resources>

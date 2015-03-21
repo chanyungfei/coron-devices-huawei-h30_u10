@@ -27,101 +27,101 @@
     return-void
 .end method
 
-.method static native activeAF()S
+.method public static native activeAF()S
 .end method
 
-.method static native activeTA()S
+.method public static native activeTA()S
 .end method
 
-.method static native autoscan()[S
+.method public static native autoscan()[S
 .end method
 
-.method static native closedev()Z
+.method public static native closedev()Z
 .end method
 
-.method static native deactiveTA()S
+.method public static native deactiveTA()S
 .end method
 
-.method static native getAFList()[S
+.method public static native getAFList()[S
 .end method
 
-.method static native getHardwareVersion()[I
+.method public static native getHardwareVersion()[I
 .end method
 
-.method static native getLRText()[B
+.method public static native getLRText()[B
 .end method
 
-.method static native getPI()S
+.method public static native getPI()S
 .end method
 
-.method static native getPS()[B
+.method public static native getPS()[B
 .end method
 
-.method static native getPTY()B
+.method public static native getPTY()B
 .end method
 
-.method static native getchipid()I
+.method public static native getchipid()I
 .end method
 
-.method static native isFMPoweredUp()I
+.method public static native isFMPoweredUp()I
 .end method
 
-.method static native isRDSsupport()I
+.method public static native isRDSsupport()I
 .end method
 
-.method static native opendev()Z
+.method public static native opendev()Z
 .end method
 
-.method static native powerdown(I)Z
+.method public static native powerdown(I)Z
 .end method
 
-.method static native powerup(F)Z
+.method public static native powerup(F)Z
 .end method
 
-.method static native rdsset(Z)I
+.method public static native rdsset(Z)I
 .end method
 
-.method static native readCapArray()S
+.method public static native readCapArray()S
 .end method
 
-.method static native readRdsBler()S
+.method public static native readRdsBler()S
 .end method
 
-.method static native readRssi()I
+.method public static native readRssi()I
 .end method
 
-.method static native readrds()S
+.method public static native readrds()S
 .end method
 
-.method static native scannew(III)[S
+.method public static native scannew(III)[S
 .end method
 
-.method static native seek(FZ)F
+.method public static native seek(FZ)F
 .end method
 
-.method static native seeknew(IIIIII)I
+.method public static native seeknew(IIIIII)I
 .end method
 
-.method static native setFMViaBTController(Z)Z
+.method public static native setFMViaBTController(Z)Z
 .end method
 
-.method static native setStereoMono(Z)Z
+.method public static native setStereoMono(Z)Z
 .end method
 
-.method static native setmute(Z)I
+.method public static native setmute(Z)I
 .end method
 
-.method static native stereoMono()Z
+.method public static native stereoMono()Z
 .end method
 
-.method static native stopscan()Z
+.method public static native stopscan()Z
 .end method
 
-.method static native switchAntenna(I)I
+.method public static native switchAntenna(I)I
 .end method
 
-.method static native tune(F)Z
+.method public static native tune(F)Z
 .end method
 
-.method static native tunenew(IIII)Z
+.method public static native tunenew(IIII)Z
 .end method

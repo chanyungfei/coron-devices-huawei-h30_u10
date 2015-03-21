@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.baidu.fm.widget.ScreenBoardView android:id="@id/screen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" />
+    <com.baidu.fm.widget.TunnerView android:id="@id/tunner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/speaker" android:background="@drawable/bg_speaker" android:layout_width="fill_parent" android:layout_height="@dimen/screen_board_speaker_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speaker_bg" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/btn_favorite" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom|center" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <com.baidu.fm.ImageViewButton android:layout_gravity="center" android:id="@id/stationList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/btn_stationlist" />
+            <com.baidu.fm.ImageViewButton android:layout_gravity="center" android:id="@id/seekPrevStation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/btn_search_previous" />
+            <com.baidu.fm.ImageViewButton android:layout_gravity="center" android:id="@id/seekNextStation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/btn_search_next" />
+        </LinearLayout>
+        <com.baidu.fm.ImageViewButton android:id="@id/menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/btn_options_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

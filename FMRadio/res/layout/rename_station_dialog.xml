@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/textRenameStationDialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="fill_horizontal" android:layout_gravity="fill_horizontal" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0sp" android:id="@id/StationNamePrompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0sp" android:layout_marginTop="10.0sp" android:text="@string/stationInfoName" />
+        <EditText android:id="@id/EditTextName" android:layout_width="200.0sp" android:layout_height="wrap_content" android:layout_marginLeft="10.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="16.0sp" android:hint="@string/freq_name_max_length" android:singleLine="true" android:maxLength="20" android:inputType="text" />
+    </LinearLayout>
+</LinearLayout>

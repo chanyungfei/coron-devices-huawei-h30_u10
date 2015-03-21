@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_ab_menu_cancel_holo_light" android:id="@id/menu_action_cancel" android:title="@string/menu_action_cancel" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_radio_delete_btn_normal" android:id="@id/menu_action_delete" android:title="@string/stationList_func_delete" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_ab_menu_done_holo_light" android:id="@id/menu_action_done" android:title="@string/menu_action_done" android:showAsAction="ifRoom" />
+</menu>

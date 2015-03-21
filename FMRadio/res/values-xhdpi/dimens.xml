@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titlebar_height">48.0dip</dimen>
+    <dimen name="audio_control_top_padding">40.0dip</dimen>
+    <dimen name="audio_control_horizontal_padding">5.0dip</dimen>
+    <dimen name="freq_num_layout_left_margin">17.0dip</dimen>
+    <dimen name="tune_prev_top_padding">43.0dip</dimen>
+    <dimen name="freq_num_img_horizontal_padding">6.0dip</dimen>
+    <dimen name="big_num_top_margin">5.0dip</dimen>
+    <dimen name="small_num_top_margin">87.0dip</dimen>
+    <dimen name="num_flection_padding">2.0dip</dimen>
+    <dimen name="dot_top_margin">85.0dip</dimen>
+    <dimen name="freq_num_marginTop">34.0dip</dimen>
+    <dimen name="freq_num_firstMarginTop">14.0dip</dimen>
+    <dimen name="freq_name_text_padding_left">10.0dip</dimen>
+    <dimen name="freq_name_text_padding_right">100.0dip</dimen>
+    <dimen name="freq_name_text_padding_top">60.0dip</dimen>
+    <dimen name="mhz_text_padding_left">30.0dip</dimen>
+    <dimen name="freq_num_button_horizontal_padding">6.0dip</dimen>
+    <dimen name="freq_small_num_img_horizontal_padding">6.0dip</dimen>
+    <dimen name="right_button_horizontal_padding">9.0dip</dimen>
+    <dimen name="screen_board_padding">5.0dip</dimen>
+    <dimen name="screen_board_freq_pointer_left_padding">90.0dip</dimen>
+    <dimen name="screen_board_mark_left_margin">14.0dip</dimen>
+    <dimen name="screen_board_mark_top_margin">14.0dip</dimen>
+    <dimen name="frequent_divider_bottom_margin">15.0dip</dimen>
+    <dimen name="frequent_pointer_left_margin">14.0dip</dimen>
+    <dimen name="frequent_pointer_top_margin">7.0dip</dimen>
+    <dimen name="frequent_pointer_bottom_margin">14.0dip</dimen>
+    <dimen name="frequent_index_left_margin">8.0dip</dimen>
+    <dimen name="frequent_index_bottom_margin">12.0dip</dimen>
+    <dimen name="frequent_index_unit_left_margin">3.0dip</dimen>
+    <dimen name="tunner_screen_left_margin">12.0dip</dimen>
+    <dimen name="screen_board_speaker_height">345.0dip</dimen>
+</resources>

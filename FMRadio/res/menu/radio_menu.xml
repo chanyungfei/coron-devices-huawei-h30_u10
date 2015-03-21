@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_speaker_on" android:visible="false" android:title="@string/menu_speaker_on" android:showAsAction="never" />
+    <item android:id="@id/menu_mute" android:title="@string/menu_mute" android:showAsAction="never" />
+    <item android:id="@id/menu_scan" android:title="@string/msg_searching_title" android:showAsAction="never" />
+    <item android:id="@id/menu_set_close_time" android:title="@string/menu_set_close_time" android:showAsAction="never" />
+    <item android:id="@id/menu_quit" android:title="@string/quit" android:showAsAction="never" />
+</menu>

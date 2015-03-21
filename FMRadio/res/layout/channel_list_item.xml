@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:adjustViewBounds="true" android:maxWidth="40.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="end" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:singleLine="true" android:layout_toRightOf="@id/image1" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" style="@android:style/TextAppearance.Medium" />
+    <ImageView android:id="@id/image2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:adjustViewBounds="true" android:maxWidth="50.0dip" android:layout_toLeftOf="@id/check_del" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <CheckBox android:id="@id/check_del" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:checkMark="?android:listChoiceIndicatorMultiple" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

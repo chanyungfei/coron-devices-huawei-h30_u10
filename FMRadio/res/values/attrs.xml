@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="normal_picture_0" format="string" />
+    <attr name="pressed_picture_0" format="string" />
+    <attr name="disabled_picture_0" format="string" />
+    <attr name="normal_picture_1" format="string" />
+    <attr name="pressed_picture_1" format="string" />
+    <attr name="disabled_picture_1" format="string" />
+</resources>

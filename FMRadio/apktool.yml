@@ -1,13 +1,14 @@
 version: 1.5.2
-apkFileName: FMRadio.apk
+apkFileName: BaiduFM.apk
 isFrameworkApk: false
 usesFramework:
   ids:
   - 1
+  - 5
 sdkInfo:
-  minSdkVersion: '17'
-  targetSdkVersion: '17'
+  minSdkVersion: '8'
+  targetSdkVersion: '13'
 packageInfo:
-  cur_package: com.mediatek.FMRadio
-  orig_package: com.mediatek.FMRadio
+  cur_package: com.baidu.fm
+  orig_package: com.baidu.fm
 compressionType: false

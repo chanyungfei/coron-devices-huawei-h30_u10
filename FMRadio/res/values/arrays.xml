@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="auto_search">
-        <item>@string/menu_search_keep_collect</item>
-        <item>@string/menu_search_not_keep_collect</item>
+    <string-array name="list_entries">
+        <item>@string/timeout_0</item>
+        <item>@string/timeout_10m</item>
+        <item>@string/timeout_30m</item>
+        <item>@string/timeout_60m</item>
+        <item>@string/timeout_90m</item>
     </string-array>
+    <integer-array name="list_entries_value">
+        <item>0</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+    </integer-array>
 </resources>

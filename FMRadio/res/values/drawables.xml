@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="radio_mute_state">@drawable/ic_radio_mute_eng</item>
+</resources>
