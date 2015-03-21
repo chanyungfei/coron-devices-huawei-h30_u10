@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="schedule_power_on_off_settings_title">定时开关机</string>
    <string name="dolby_mobile_settings_title">杜比移动技术设置</string>
    <string name="original_settings">原厂设置</string>
 </resources>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <add-resource type="string" name="schedule_power_on_off_settings_title" />
+    <string name="schedule_power_on_off_settings_title">Scheduled power on &amp; off</string>
+    <add-resource type="id" name="power_settings" />
     <add-resource type="string" name="dolby_mobile_settings_title" />
     <string name="dolby_mobile_settings_title">Dolby Mobile settings</string>
     <add-resource type="string" name="original_settings" />

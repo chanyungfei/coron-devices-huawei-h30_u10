@@ -1,3 +1,6 @@
+    <header android:icon="@drawable/ic_settings_schpwronoff" android:id="@+id/power_settings" android:title="@string/schedule_power_on_off_settings_title">
+        <intent android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING" />
+    </header>
     <header android:icon="@drawable/ic_settings_auto" android:id="@+id/original_settings" android:title="@string/original_settings">
         <intent android:action="com.baidu.device_original_settings" android:targetClass="com.baidu.deviceoriginalsettings.DeviceOriginalSettingsActivity" />
     </header>
