@@ -93,7 +93,7 @@ vendor_modify_jars := framework hwframework mediatek-framework mediatek-telephon
 # The default value is nothing.
 # You can configure the baidu system apk name in the value.
 #-----------------------------------------------------------------------------
-baidu_remove_apps := HomePro YiYueDu
+baidu_remove_apps := BaiduAppSearch BaiduBrowser BaiduMap BaiduUpdate HomePro YiYueDu
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the baidu system apk.
